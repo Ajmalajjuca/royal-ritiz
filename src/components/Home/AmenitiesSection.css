@@ -1,0 +1,150 @@
+.amenities-hero {
+  padding: 100px 0;
+  background-color: #faf8f3;
+  font-family: var(--font-body);
+}
+
+.amenities-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Images Section */
+.amenities-images {
+  position: relative;
+  height: 500px;
+}
+
+.image-stack {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image-wrapper {
+  position: absolute;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.image-top {
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 65%;
+  z-index: 2;
+}
+
+.image-bottom {
+  bottom: 0;
+  right: 0;
+  width: 75%;
+  height: 55%;
+  z-index: 1;
+}
+
+.amenity-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover .amenity-image {
+  transform: scale(1.05);
+}
+
+/* Content Section */
+.amenities-content {
+  padding: 20px 0;
+}
+
+.amenities-heading {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 400;
+  color: #2c2c2c;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.amenities-description {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.amenities-cta {
+  margin-top: 30px;
+  padding: 14px 32px;
+  background-color: #e8d5b7;
+  color: #2c2c2c;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font-body);
+}
+
+.amenities-cta:hover {
+  background-color: #d4c19f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .amenities-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .amenities-images {
+    height: 400px;
+  }
+
+  .amenities-heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .amenities-hero {
+    padding: 60px 0;
+  }
+
+  .amenities-container {
+    padding: 0 20px;
+    gap: 40px;
+  }
+
+  .amenities-images {
+    height: 350px;
+  }
+
+  .amenities-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .amenities-description {
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+  }
+
+  .amenities-cta {
+    padding: 12px 28px;
+    font-size: 0.95rem;
+  }
+}

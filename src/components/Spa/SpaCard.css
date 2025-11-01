@@ -1,0 +1,163 @@
+.spa-card {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 80px 8%;
+  background-color: #fff;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.spa-card-image {
+  flex: 1;
+  max-width: 550px;
+}
+
+.spa-card-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.spa-card-content {
+  flex: 1;
+  max-width: 550px;
+}
+
+.spa-name {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #0b132b;
+}
+
+.spa-description {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.spa-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.details-btn {
+  font-family: var(--font-body);
+  border: 1px solid #222;
+  background: transparent;
+  padding: 12px 32px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.details-btn:hover {
+  background-color: #222;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.spa-menu-link {
+  font-family: var(--font-body);
+  color: #222;
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.3s ease;
+}
+
+.spa-menu-link:hover {
+  color: #666;
+}
+
+.menu-arrow {
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.spa-menu-link:hover .menu-arrow {
+  transform: translateX(4px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .spa-card {
+    flex-direction: column;
+    text-align: left;
+    padding: 60px 5%;
+    gap: 2rem;
+  }
+
+  .spa-card-image {
+    max-width: 100%;
+  }
+
+  .spa-card-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .spa-card-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .spa-card {
+    padding: 40px 4%;
+  }
+
+  .spa-name {
+    font-size: 2.2rem;
+  }
+
+  .spa-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .spa-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .details-btn,
+  .spa-menu-link {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .spa-card {
+    padding: 30px 4%;
+  }
+
+  .spa-name {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+  }
+
+  .spa-description {
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+  }
+}
+

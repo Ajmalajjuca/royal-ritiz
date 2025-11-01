@@ -1,0 +1,138 @@
+.instagram-section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: #f9f5f0;
+  padding: 80px 10%;
+  flex-wrap: wrap;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Left side text */
+.insta-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.insta-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.insta-handle {
+  font-family: var(--font-heading);
+  font-size: 4.5rem;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+.insta-button {
+  display: inline-block;
+  border: 2px solid #000;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.insta-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Right side image */
+.insta-right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.insta-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 0 0 40% 0;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  margin-right: 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .instagram-section {
+    padding: 60px 6%;
+  }
+
+  .insta-handle {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .instagram-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 60px 20px;
+    align-items: center;
+  }
+
+  .insta-handle {
+    font-size: 3rem;
+  }
+
+  .insta-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .insta-button {
+    font-size: 1.1rem;
+  }
+
+  .insta-right {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  .insta-image {
+    border-radius: 20px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .instagram-section {
+    padding: 40px 16px;
+  }
+
+  .insta-handle {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+
+  .insta-subtitle {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .insta-button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+
+  .insta-image {
+    max-width: 100%;
+  }
+}
