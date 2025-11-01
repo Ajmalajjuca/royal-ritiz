@@ -7,21 +7,21 @@ const rooms = [
     title: "Royal Deluxe Suite",
     details: "70 m² • 2 beds • 1 bathroom • balcony",
     price: "$1500/NIGHT",
-    image: "/images/room1.png", // ✅ fixed path
+    image: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: 2,
     title: "Luxury King Room",
     details: "60 m² • 1 king bed • 1 bathroom • city view",
     price: "$1200/NIGHT",
-    image: "/images/room2.png", // ✅ fixed path
+    image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: 3,
     title: "Presidential Suite",
     details: "90 m² • 2 beds • 2 bathrooms • terrace",
     price: "$2000/NIGHT",
-    image: "/images/room3.png", // ✅ fixed path
+    image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80",
   },
 ];
 

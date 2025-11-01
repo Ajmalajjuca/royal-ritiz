@@ -25,3 +25,4 @@ const AboutCard = ({ title, description, image, imageAlt }) => {
 
 export default AboutCard;
 
+
