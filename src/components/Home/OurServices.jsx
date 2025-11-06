@@ -4,20 +4,24 @@ import "./OurServices.css";
 import restaurant from '../../optimized-assets/hotel.webp';
 import banquet from '../../optimized-assets/banquet.webp';
 import spa from '../../optimized-assets/spa.webp';
+import { Link } from "react-router-dom";
 const services = [
   {
     title: "Spa",
     description:
       "Rejuvenate your body and soul with our professional spa therapies and wellness treatments designed to relax and refresh you.",
     image:
-      spa
+      spa,
+      link:"spa"
   },
   {
     title: "Banquet",
     description:
       "Host your special occasions in our luxurious banquet halls equipped with modern amenities and elegant decor for unforgettable events.",
     image:
-      banquet
+      banquet,
+      link:"banquet"
+
   },
   {
     title: "Restaurant",
@@ -25,6 +29,7 @@ const services = [
       "Savor exquisite cuisines prepared by our expert chefs. Experience fine dining with an ambiance that delights all your senses.",
     image:
       restaurant,
+      link:"restaurant"
   },
 ];
 
@@ -48,7 +53,9 @@ const OurServices = () => {
             <div className="service-content">
               <h3>{service.title}</h3>
               <p>{service.description}</p>
+             <Link to={`/${service.link}`}>
               <button className="learn-more-btn">Learn More</button>
+              </Link>
             </div>
           </div>
         ))}

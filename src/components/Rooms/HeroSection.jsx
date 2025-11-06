@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className="hero-content">
         <h1 className="hero-title">Rooms & Suites</h1>
         <p className="hero-subtitle">
-          Our 200 guest rooms and suites offer all the amenities and comfort you expect from a luxury hotel in the heart of Indore.
+          Our 200 guest rooms and suites offer all the amenities and comfort you expect from a luxury hotel in the heart of Hubali.
         </p>
       </div>
 

@@ -28,12 +28,12 @@ const Footer = () => {
             <p>+91 96060 17457</p>
 
             <h3>Contact Emails</h3>
-            <p><a href="mailto:fnb@royalritz.in">fnb@royalritz.in</a></p>
-            <p><a href="mailto:sales@royalritz.in">sales@royalritz.in</a></p>
-            <p><a href="mailto:reservation@royalritz.in">reservation@royalritz.in</a></p>
+            <p><a href="mailto:fnb@royalritz.in">fnb@royalritis.in</a></p>
+            <p><a href="mailto:sales@royalritz.in">sales@royalritis.in</a></p>
+            <p><a href="mailto:reservation@royalritz.in">reservation@royalritis.in</a></p>
 
             <h3>Website</h3>
-            <p><a href="http://www.royalritz.in" target="_blank" rel="noopener noreferrer">www.royalritz.in</a></p>
+            <p><a href="http://www.royalritz.in" target="_blank" rel="noopener noreferrer">www.royalritis.in</a></p>
 
             <div className="social-media">
               <a href="#" aria-label="Facebook" className="social-icon facebook"><FaFacebookF /></a>
@@ -74,7 +74,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Royal Ritiz. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Royal ritis. All rights reserved.</p>
         </div>
       </div>
 

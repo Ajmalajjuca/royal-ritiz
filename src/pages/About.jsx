@@ -12,7 +12,7 @@ const About = () => {
       <HeroSection />
       <AboutCard
         title="Our Hotel"
-        description="Step into a world of luxury at the premier 5-star hotel in Indore. Royal Ritiz offers the perfect fusion of European style and Indian hospitality for leisure and business travel."
+        description="Step into a world of luxury at the premier 5-star hotel in Hubali. Royal Ritis offers the perfect fusion of European style and Indian hospitality for leisure and business travel."
         image={hotel}
         
       />

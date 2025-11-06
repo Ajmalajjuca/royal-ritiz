@@ -38,7 +38,7 @@ const HeroSection = () => {
 
       {/* Main Content - Centered */}
       <div className="hero-content">
-        <h1 className="hero-title">Royal Ritiz</h1>
+        <h1 className="hero-title">Royal Ritis</h1>
         <p className="hero-subtitle">The Art of Grand Hospitality</p>
       </div>
 

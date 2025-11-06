@@ -1,5 +1,6 @@
 import React from "react";
 import "./RoomsSection.css";
+import { Link } from "react-router-dom";
 import room1 from '../../optimized-assets/rooms1.webp';
 import room2 from '../../optimized-assets/room1.webp';
 import room3 from '../../optimized-assets/rooms2.webp';
@@ -47,7 +48,10 @@ const OurServices = () => {
             <div className="service-content">
               <h3>{room.title}</h3>
               <p>{room.description}</p>
-              <button className="learn-more-btn">Check Availability</button>
+              <Link to='/rooms'>
+ <button className="learn-more-btn" >Check Availability</button>
+              </Link>
+             
             </div>
           </div>
         ))}

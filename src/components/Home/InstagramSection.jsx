@@ -7,9 +7,9 @@ const InstagramSection = () => {
     <section className="instagram-section">
       <div className="insta-left">
         <p className="insta-subtitle">Follow us on Instagram</p>
-        <h2 className="insta-handle">@royalritiz</h2>
+        <h2 className="insta-handle">@royalritis</h2>
         <a
-          href="https://www.instagram.com/royalritiz/"
+          href="https://www.instagram.com/royalritzofficial/"
           target="_blank"
           rel="noopener noreferrer"
           className="insta-button"

@@ -31,7 +31,7 @@ const AmenitiesSection = () => {
         <div className="amenities-content">
           <h2 className="amenities-heading">World-Class Amenities</h2>
           <p className="amenities-description">
-            Royal Ritiz offers an exceptional collection of premium amenities designed 
+            Royal Rits offers an exceptional collection of premium amenities designed 
             to elevate your stay. From state-of-the-art facilities to personalized 
             services, we ensure every moment is a testament to luxury.
           </p>

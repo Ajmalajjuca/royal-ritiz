@@ -7,7 +7,7 @@ const MapSection = () => {
       <div className="map-header">
         <h2 className="map-title">Find Us</h2>
         <p className="map-subtitle">
-          We're located in the heart of Karnataka — experience the elegance and comfort of Royal Ritiz.
+          We're located in the heart of Karnataka — experience the elegance and comfort of Royal Ritis.
         </p>
       </div>
 

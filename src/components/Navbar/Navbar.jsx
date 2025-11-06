@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
 
         <Link to="/" className="navbar-logo">
-          Royal Ritiz
+          Royal Ritis
         </Link>
 
         <div className="navbar-right">

@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className="hero-content">
         <h1 className="hero-title">About Us</h1>
         <p className="hero-subtitle">
-          Discover the story behind Royal Ritiz, where luxury meets exceptional hospitality 
+          Discover the story behind Royal Ritis, where luxury meets exceptional hospitality 
           and every detail is crafted to perfection.
         </p>
       </div>
