@@ -40,7 +40,8 @@
 /* Top Center Logo - Positioned below navbar */
 .hero-logo-container {
   position: absolute;
-  top: 160px;
+  margin-top:20px;
+  top: 190px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;

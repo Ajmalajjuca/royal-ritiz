@@ -1,12 +1,12 @@
 import React from "react";
 import "./RestaurantCard.css";
-
+import img from '../../optimized-assets/hotel.webp';
 const RestaurantCard = () => {
   return (
     <section className="restaurant-card">
       <div className="restaurant-card-image">
         <img
-          src="https://picsum.photos/800/600?restaurant,interior"
+          src={img}
           alt="Tangerine Restaurant"
         />
       </div>

@@ -1,5 +1,7 @@
 import React from "react";
 import "./AmenitiesSection.css";
+import image1 from '../../optimized-assets/pool.webp';
+import image2 from '../../optimized-assets/terrace.webp';
 
 const AmenitiesSection = () => {
   return (
@@ -10,14 +12,14 @@ const AmenitiesSection = () => {
           <div className="image-stack">
             <div className="image-wrapper image-top">
               <img
-                src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=600&q=80"
+                src={image1}
                 alt="Luxury spa and wellness facilities"
                 className="amenity-image"
               />
             </div>
             <div className="image-wrapper image-bottom">
               <img
-                src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                src={image2}
                 alt="Premium hotel amenities"
                 className="amenity-image"
               />

@@ -1,27 +1,30 @@
 import React from "react";
 import "./OurServices.css";
 
+import restaurant from '../../optimized-assets/hotel.webp';
+import banquet from '../../optimized-assets/banquet.webp';
+import spa from '../../optimized-assets/spa.webp';
 const services = [
   {
     title: "Spa",
     description:
       "Rejuvenate your body and soul with our professional spa therapies and wellness treatments designed to relax and refresh you.",
     image:
-      "https://images.unsplash.com/photo-1600431521340-491eca880813?auto=format&fit=crop&w=800&q=80",
+      spa
   },
   {
     title: "Banquet",
     description:
       "Host your special occasions in our luxurious banquet halls equipped with modern amenities and elegant decor for unforgettable events.",
     image:
-      "https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=800&q=80",
+      banquet
   },
   {
     title: "Restaurant",
     description:
       "Savor exquisite cuisines prepared by our expert chefs. Experience fine dining with an ambiance that delights all your senses.",
     image:
-      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+      restaurant,
   },
 ];
 

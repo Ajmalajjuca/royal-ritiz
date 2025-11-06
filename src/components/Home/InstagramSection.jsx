@@ -1,6 +1,7 @@
 import React from "react";
 import "./InstagramSection.css";
 
+import image from '../../optimized-assets/insta_image.webp'
 const InstagramSection = () => {
   return (
     <section className="instagram-section">
@@ -19,7 +20,7 @@ const InstagramSection = () => {
 
       <div className="insta-right">
         <img
-          src="https://images.unsplash.com/photo-1606787366850-de6330128bfc"
+          src={image}
           alt="Royal Ritiz Instagram Preview"
           className="insta-image"
         />

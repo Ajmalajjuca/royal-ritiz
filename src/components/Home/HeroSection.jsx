@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
 
-const images = [
-  "https://picsum.photos/id/1018/1600/900",
-  "https://picsum.photos/id/1025/1600/900",
-  "https://picsum.photos/id/1039/1600/900",
-];
+import hero1 from '../../optimized-assets/hero.webp'
+import hero2 from '../../optimized-assets/HDR3.webp';
+import hero3 from '../../optimized-assets/Untitled_HDR-2 copy.webp';
+const images =[hero1,hero2,hero3];
+
 
 const HeroSection = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -13,7 +13,7 @@ const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000); // change every 5 seconds
+    }, 3200); // change every 5 seconds
     return () => clearInterval(interval);
   }, []);
 

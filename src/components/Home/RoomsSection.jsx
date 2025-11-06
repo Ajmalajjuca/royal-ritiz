@@ -1,27 +1,29 @@
 import React from "react";
 import "./RoomsSection.css";
-
+import room1 from '../../optimized-assets/rooms1.webp';
+import room2 from '../../optimized-assets/room1.webp';
+import room3 from '../../optimized-assets/rooms2.webp';
 const rooms = [
   {
     title: "Deluxe Room",
     description:
       "Experience comfort and elegance in our Deluxe Room featuring modern interiors, a cozy queen-sized bed, and city views.",
     image:
-      "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80",
+      room1,
   },
   {
     title: "Executive Suite",
     description:
       "Enjoy the luxury of space and sophistication with a private lounge area, premium bedding, and a balcony overlooking the skyline.",
     image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      room2,
   },
   {
     title: "Family Room",
     description:
       "Perfect for families or groups, our spacious Family Room includes multiple beds, ample storage, and warm, inviting décor.",
     image:
-      "https://images.unsplash.com/photo-1590490359683-658d3d23f972?auto=format&fit=crop&w=800&q=80",
+      room3,
   },
 ];
 
