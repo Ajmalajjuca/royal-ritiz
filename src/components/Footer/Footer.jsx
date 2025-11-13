@@ -41,7 +41,7 @@ Phone; 0836 2239299
 
             <div className="social-media">
               <a href="#" aria-label="Facebook" className="social-icon facebook"><FaFacebookF /></a>
-              <a href="https://www.instagram.com/royalritzofficial/" aria-label="Instagram" className="social-icon instagram"><FaInstagram /></a>
+              <a href="https://www.instagram.com/royalritishubli?igsh=b2c0eGRzZnd6NzNx" aria-label="Instagram" className="social-icon instagram"><FaInstagram /></a>
             </div>
 
             <h3>We Accept</h3>
