@@ -10,7 +10,7 @@ const rooms = [
     title: "Premium King",
     description: "Experience ultimate comfort in our Premium King Bed Rooms featuring elegant interiors.",
     image: room1,
-    link: "/rooms/premium-king-bed-room"
+    link: "/rooms/premium-king-room"
   },
   {
     title: "The Suite",

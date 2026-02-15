@@ -103,8 +103,54 @@
   color: #555;
 }
 
-/* List Wrapper */
-.restaurants-list {
-  position: relative;
-  z-index: 2;
+@media (max-width: 1024px) {
+  .restaurant-intro-title {
+    font-size: 2.8rem;
+  }
+  
+  .restaurant-page-content .dining-text,
+  .restaurant-page-content .culinary-text {
+    font-size: 12rem;
+  }
 }
+
+@media (max-width: 768px) {
+  .restaurant-page-content {
+    padding: 60px 0;
+  }
+
+  .restaurant-intro {
+    padding: 0 20px;
+    margin-bottom: 60px;
+  }
+
+  .restaurant-intro-title {
+    font-size: 2.2rem;
+  }
+
+  .restaurant-intro-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .restaurant-page-content .dining-text,
+  .restaurant-page-content .culinary-text {
+    font-size: 8rem;
+  }
+
+  .restaurant-page-content .palm-leaf {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .restaurant-page-content .dining-text,
+  .restaurant-page-content .culinary-text {
+    font-size: 5rem;
+  }
+
+  .restaurant-intro-title {
+    font-size: 1.8rem;
+  }
+}
+

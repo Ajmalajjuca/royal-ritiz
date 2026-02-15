@@ -22,8 +22,8 @@ const BanquetCard = ({ subtitle, title, description, image, imageAlt, linkText, 
           </p>
 
           <div className="banquet-card-actions">
-            <button className="banquet-primary-btn">ENQUIRE NOW</button>
-            <button className="banquet-ghost-btn">{linkText || "EXPLORE MORE"}</button>
+            {/* <button className="banquet-primary-btn">ENQUIRE NOW</button>
+            <button className="banquet-ghost-btn">{linkText || "EXPLORE MORE"}</button> */}
           </div>
         </div>
 

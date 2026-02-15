@@ -17,21 +17,23 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
+    handleScroll(); // Initialize state on mount
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
   return (
-    <nav className={`navbar ${scrolled ? "scrolled" : ""} ${mobileMenuOpen ? "mobile-open" : ""}`}>
+    <nav className={`navbar ${scrolled ? "scrolled" : ""} ${mobileMenuOpen ? "mobile-menu-open" : ""}`}>
       <div className="navbar-container">
         {/* Left: Logo */}
         <div className="navbar-logo-container">
           <Link to="/" className="navbar-logo">
-            ROYAL RITIZ
+            ROYAL Ritz
           </Link>
         </div>
 

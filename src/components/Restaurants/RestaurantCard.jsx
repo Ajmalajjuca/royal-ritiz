@@ -32,8 +32,8 @@ const RestaurantCard = ({ title, subtitle, description, image, details, index })
           )}
 
           <div className="restaurant-card-actions">
-            <button className="res-primary-btn">VIEW MENU</button>
-            <button className="res-ghost-btn">RESERVE A TABLE</button>
+            {/* <button className="res-primary-btn">VIEW MENU</button>
+            <button className="res-ghost-btn">RESERVE A TABLE</button> */}
           </div>
         </div>
 

@@ -23,7 +23,7 @@ const diningData = [
         image: bakery,
         title: "YE OLD BAKERY",
         subtitle: "Oldest Bakery In Town",
-        description: "Ye Old Bakery, one of the best bakeries in New Delhi, has been a haven of sweet creations since 1983. As one of the oldest bakeries in the country, it offers guests a taste of history with its refined atmosphere and time-honoured recipes.",
+        description: "Ye Old Bakery, one of the best bakeries in Hubli, has been a haven of sweet creations since 1983. As one of the oldest bakeries in the country, it offers guests a taste of history with its refined atmosphere and time-honoured recipes.",
         link: "/restaurant"
     }
 ];

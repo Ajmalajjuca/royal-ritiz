@@ -29,7 +29,7 @@ const Footer = () => {
         {/* Brand Column */}
         <div className="footer-col brand-col">
           <div className="footer-brand">
-            <h2 className="footer-logo">ROYAL RITIZ</h2>
+            <h2 className="footer-logo">ROYAL Ritz</h2>
             <span className="footer-location">HUBBALLI</span>
           </div>
         </div>
@@ -40,7 +40,7 @@ const Footer = () => {
           <div className="footer-links-grid">
             <ul className="footer-links">
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">Royal Ritiz Hubballi</Link></li>
+              <li><Link to="/about">Royal Ritz Hubballi</Link></li>
               <li><Link to="/rooms">Rooms</Link></li>
               <li><Link to="/restaurant">Dining</Link></li>
               <li><Link to="/spa">Wellness</Link></li>

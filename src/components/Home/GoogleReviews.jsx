@@ -6,7 +6,7 @@ const GoogleReviews = () => {
     {
       name: "Aarav Mehta",
       rating: 5,
-      text: "Had an amazing stay! The rooms were clean and the service was exceptional. Highly recommend Royal Ritiz!",
+      text: "Had an amazing stay! The rooms were clean and the service was exceptional. Highly recommend Royal Ritz!",
     },
     {
       name: "Priya Sharma",

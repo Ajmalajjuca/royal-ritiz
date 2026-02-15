@@ -17,7 +17,7 @@ const EventsSection = () => {
                     </div>
 
                     <div className="header-text-content">
-                        <h2 className="events-main-title">Experience Elegance: Unforgettable Soirées at Royal Ritiz</h2>
+                        <h2 className="events-main-title">Experience Elegance: Unforgettable Soirées at Royal Ritz</h2>
                         <h4 className="events-main-subtitle">Epic Event Spaces</h4>
                         <button className="events-explore-btn">EXPLORE</button>
                     </div>
@@ -34,7 +34,7 @@ const EventsSection = () => {
                         <div className="event-card-content">
                             <h3 className="event-card-title">Event Venues</h3>
                             <p className="event-card-desc">
-                                The Viceroy Hall, adjacent to the lobby, offers a stunning pool view and can accommodate 300 people in various layouts across 316 sq. m. The Royal Ritiz Garden, known for its legendary Sunday Brunch, is ideal for hosting small events, featuring delectable multi-cuisine meals and premium drinks.
+                                The Viceroy Hall, adjacent to the lobby, offers a stunning pool view and can accommodate 300 people in various layouts across 316 sq. m. The Royal Ritz Garden, known for its legendary Sunday Brunch, is ideal for hosting small events, featuring delectable multi-cuisine meals and premium drinks.
                             </p>
                             <a href="/banquet" className="event-card-link">EXPLORE</a>
                         </div>
@@ -48,7 +48,7 @@ const EventsSection = () => {
                         <div className="event-card-content">
                             <h3 className="event-card-title">Boardrooms</h3>
                             <p className="event-card-desc">
-                                King George V, our opulent boardroom in New Delhi, and The Senate offer top-notch amenities and facilities, ideal for business meetings, work lunches, and private conferences.
+                                King George V, our opulent boardroom in Hubli, and The Senate offer top-notch amenities and facilities, ideal for business meetings, work lunches, and private conferences.
                             </p>
                             <a href="/banquet" className="event-card-link">EXPLORE</a>
                         </div>

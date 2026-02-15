@@ -22,8 +22,8 @@ const SpaCard = ({ subtitle, title, description, image, imageAlt, linkText, inde
           </p>
 
           <div className="spa-card-actions">
-            <button className="spa-primary-btn">ENQUIRE NOW</button>
-            <button className="spa-ghost-btn">{linkText || "SPA MENU"}</button>
+            {/* <button className="spa-primary-btn">ENQUIRE NOW</button>
+            <button className="spa-ghost-btn">{linkText || "SPA MENU"}</button> */}
           </div>
         </div>
 

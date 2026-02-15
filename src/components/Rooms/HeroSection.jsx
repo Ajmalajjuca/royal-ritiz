@@ -16,9 +16,9 @@ const HeroSection = ({ title, subtitle, image }) => {
         <div className="hero-breadcrumbs">
           <Link to="/">HOME</Link>
           <span>&gt;</span>
-          <Link to="/">ROYAL RITIZ NEW DELHI</Link>
+          <Link to="/">ROYAL Ritz Hubli</Link>
           <span>&gt;</span>
-          <span className="current">ROOMS</span>
+          <span className="current">{title ? title.toUpperCase() : "ROOMS"}</span>
         </div>
       </div>
 
@@ -28,5 +28,6 @@ const HeroSection = ({ title, subtitle, image }) => {
 };
 
 export default HeroSection;
+
 
 

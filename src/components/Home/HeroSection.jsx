@@ -33,8 +33,8 @@ const HeroSection = () => {
       <div className="hero-overlay"></div>
 
       <div className="hero-content">
-        <h2 className="hero-subtitle">NEW DELHI</h2>
-        <h1 className="hero-title">ROYAL RITIZ</h1>
+        <h2 className="hero-subtitle">HUBLI</h2>
+        <h1 className="hero-title">ROYAL Ritz</h1>
         <div className="hero-divider"></div>
         {/* <p className="hero-description">Since 1955</p> */}
       </div>

@@ -15,14 +15,14 @@ const Rooms = () => {
     {
       category: "Suite",
       title: "EXECUTIVE SUITE",
-      description: "Our pinnacle offering in Lutyens Delhi for the crème de la crème is this exquisite suite. An opulent living area precedes a luxurious bedroom adorned with handpicked artwork. Every detail reflects timeless elegance and thoughtful design, and all of which ensure your stay with us is paramount.",
+      description: "Our pinnacle offering in Lutyens Hubli for the crème de la crème is this exquisite suite. An opulent living area precedes a luxurious bedroom adorned with handpicked artwork. Every detail reflects timeless elegance and thoughtful design, and all of which ensure your stay with us is paramount.",
       image: room1,
       link: "/rooms/executive-suite"
     },
     {
       category: "Suite",
       title: "LUXURY SUITE",
-      description: "A suite exuding old-school charm and luxury, nestled in the renowned Lutyens Delhi, synonymous with colonial elegance. This suite boasts aesthetically pleasing interiors and a large window offers calming views of the serene surroundings. Enhanced by an array of amenities and a spacious walk-in closet, they prepare you elegantly for the day ahead.",
+      description: "A suite exuding old-school charm and luxury, nestled in the renowned Lutyens Hubli, synonymous with colonial elegance. This suite boasts aesthetically pleasing interiors and a large window offers calming views of the serene surroundings. Enhanced by an array of amenities and a spacious walk-in closet, they prepare you elegantly for the day ahead.",
       image: room2,
       link: "/rooms/luxury-suite"
     },
@@ -39,7 +39,7 @@ const Rooms = () => {
     {
       category: "Deluxe",
       title: "DELUXE KING BED ROOM - POOL VIEW",
-      description: "This room radiates colonial charm and elegance with ornamental side lamps and unique artwork that chronicles Delhi's rich history. Complemented by a sumptuous soft bed, luxurious amenities, and breathtaking views of a pristine pool, we provide a modern yet culturally enriched heritage stay option.",
+      description: "This room radiates colonial charm and elegance with ornamental side lamps and unique artwork that chronicles Hubli's rich history. Complemented by a sumptuous soft bed, luxurious amenities, and breathtaking views of a pristine pool, we provide a modern yet culturally enriched heritage stay option.",
       image: room1,
       link: "/rooms/deluxe-pool-view"
     },
@@ -86,7 +86,7 @@ const Rooms = () => {
           <div className="rooms-intro-section">
             <h2 className="rooms-intro-title">
               Enjoy High-end Hospitality <br />
-              With Our Rooms in New Delhi
+              With Our Rooms in Ne
             </h2>
           </div>
         </div>

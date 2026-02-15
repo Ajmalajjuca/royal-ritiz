@@ -10,11 +10,7 @@ import Banquet from "./pages/Banquet";
 import Spa from "./pages/Spa";
 import About from "./pages/About";
 
-// Room detail pages
-import PremiumKingRoom from "./pages/RoomDetails/PremiumKingRoom";
-import SuiteRoom from "./pages/RoomDetails/SuiteRoom";
-import CottageRoom from "./pages/RoomDetails/CottageRoom";
-import SuperiorTwinRoom from "./pages/RoomDetails/SuperiorTwinRoom";
+import RoomDetail from "./pages/RoomDetail";
 
 function App() {
   return (
@@ -32,13 +28,8 @@ function App() {
             <Route path="/spa" element={<Spa />} />
             <Route path="/about" element={<About />} />
 
-            {/* Room detail pages — consistent with slug logic */}
-            <Route path="/rooms/premium-king-bed-room" element={<PremiumKingRoom />} />
-            <Route path="/rooms/suite-room" element={<SuiteRoom />} />
-            <Route path="/rooms/cottage-room" element={<CottageRoom />} />
-            <Route path="/rooms/superior-twin-room" element={<SuperiorTwinRoom />} />
-
-            {/* <Route path="/book-online" element={<BookOnline />} /> */}
+            {/* Dynamic Room Details */}
+            <Route path="/rooms/:roomId" element={<RoomDetail />} />
           </Routes>
         </main>
 

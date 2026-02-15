@@ -8,7 +8,7 @@ const BenefitsSection = () => {
                 <div className="benefits-content">
                     <h2 className="benefits-title">Unlock Exclusive Benefits</h2>
                     <p className="benefits-text">
-                        Experience unparalleled bliss with exclusive memberships curated for your regal presence at our distinguished hotel in Delhi.
+                        Experience unparalleled bliss with exclusive memberships curated for your regal presence at our distinguished hotel in Hubli.
                     </p>
                     <button className="benefits-explore-btn">EXPLORE</button>
                 </div>

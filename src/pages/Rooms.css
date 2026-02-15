@@ -221,6 +221,7 @@
   line-clamp: 4;
 }
 
+
 .room-card-btn {
   align-self: flex-start; /* Keep button left-aligned */
   display: inline-block;
@@ -307,15 +308,50 @@
 
 /* Responsive */
 @media (max-width: 991px) {
+  .rooms-page-content { padding: 60px 0; }
+  
+  .rooms-page-content .suites-text,
+  .rooms-page-content .rooms-text {
+    font-size: 8rem;
+    top: 50px;
+  }
+
   .rooms-intro-title { font-size: 2.8rem; }
-  .room-card-premium { flex: 0 0 100%; padding-right: 5%; }
-  .rooms-premium-slider { margin-left: 5%; padding-left: 0; }
-  .rooms-nav-btn.left { margin-left: 10px; }
+  .rooms-intro-section { margin-bottom: 60px; }
+  .rooms-intro-section.mirrored { margin-right: 5%; }
+
+  .room-card-premium { 
+    flex: 0 0 90vw; 
+    scroll-snap-align: center;
+  }
+  
+  .room-card-img-box { height: 450px; }
+  
+  .suites-slider { margin-left: 5%; }
+  .rooms-slider { margin-right: 5%; }
+  
+  .rooms-nav-btn { width: 45px; height: 45px; }
+  .rooms-nav-btn span { font-size: 1.5rem; }
 }
 
 @media (max-width: 576px) {
-  .rooms-intro-title { font-size: 2.2rem; }
-  .rooms-premium-slider { margin-left: 0; padding-left: 5%; } /* Revert to padding for small mobile to allow edge-to-edge touch scroll */
+  .rooms-page-content .suites-text,
+  .rooms-page-content .rooms-text {
+    font-size: 5rem;
+  }
+
+  .rooms-intro-title { font-size: 2rem; }
+  
+  .room-card-tit { font-size: 1.5rem; min-height: auto; }
+  .room-card-desc-text { font-size: 0.9rem; -webkit-line-clamp: 3; }
+  .room-card-info-box { height: auto; padding-right: 0; padding-bottom: 20px; }
+
+  .rooms-premium-slider { gap: 20px; }
   .rooms-nav-controls { display: none; }
+  
+  .rooms-slider-relative.mirrored {
+    overflow: hidden; /* Prevent jitter */
+  }
 }
+
 

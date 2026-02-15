@@ -199,25 +199,59 @@
   border-color: #000;
 }
 
-/* Responsive */
-@media (max-width: 1100px) {
-  .dining-item-card {
-    flex: 0 0 calc(50% - 15px);
-  }
-}
-
 @media (max-width: 768px) {
+  .dining-slider-section {
+    padding: 60px 0;
+  }
+
   .dining-main-title {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
+  }
+
+  .dining-main-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
   }
   
   .dining-item-card {
     flex: 0 0 100%;
     min-width: 100%;
   }
+
+  .dining-card-image-wrapper {
+    height: 400px;
+  }
   
   .dining-slider-header {
     flex-direction: column;
     padding-left: 30px;
+    margin-bottom: 40px;
+  }
+
+  .slider-nav {
+    width: 40px;
+    height: 40px;
+  }
+
+  .slider-nav .arrow {
+    font-size: 1.4rem;
   }
 }
+
+@media (max-width: 480px) {
+  .dining-main-title {
+    font-size: 2rem;
+  }
+
+  .dining-card-image-wrapper {
+    height: 300px;
+  }
+
+  .dining-carousel-container-full {
+    padding: 0 20px;
+  }
+
+  .slider-nav.left { left: 10px; }
+  .slider-nav.right { right: 10px; }
+}
+

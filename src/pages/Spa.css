@@ -103,8 +103,20 @@
   color: #555;
 }
 
-/* Section Wrapper */
-.spa-list {
-  position: relative;
-  z-index: 2;
+@media (max-width: 768px) {
+  .spa-page-content { padding: 40px 0; }
+  
+  .spa-page-content .wellness-text,
+  .spa-page-content .sanctuary-text {
+    font-size: 6rem;
+    top: 50px;
+  }
+  
+  .spa-intro-title { font-size: 2.2rem; }
+  .spa-intro { margin-bottom: 60px; }
+  
+  .spa-page-content .palm-leaf {
+    width: 300px;
+    height: 300px;
+  }
 }

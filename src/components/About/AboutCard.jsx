@@ -4,6 +4,10 @@ import "./AboutCard.css";
 const AboutCard = ({ title, description, image, imageAlt }) => {
   return (
     <section className="about-card-section">
+      {/* Background Watermarks */}
+      <div className="watermark palm-leaf top-left"></div>
+      <div className="watermark palm-leaf bottom-right"></div>
+
       <div className="container about-card-container">
 
         {/* Image Side */}
@@ -17,6 +21,10 @@ const AboutCard = ({ title, description, image, imageAlt }) => {
 
         {/* Content Side */}
         <div className="about-card-content">
+          <div className="decorative-line-container about-decorator">
+            <div className="decorative-line"></div>
+            <div className="diamond-accent"></div>
+          </div>
           <h4 className="about-subtitle">OUR LEGACY</h4>
           <h2 className="about-title">{title}</h2>
           <p className="about-description">

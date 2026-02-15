@@ -15,7 +15,7 @@ const Banquet = () => {
     {
       subtitle: "ESTEEMED",
       title: "VICEROY HALL",
-      description: "Steeped in history and regal splendor, Viceroy Hall is the jewel of Royal Ritiz. Overlooking the lush gardens and pool, this grand hall features mammoth chandeliers and intricate colonial motifs, providing a majestic backdrop for weddings and high-profile galas for up to 500 guests.",
+      description: "Steeped in history and regal splendor, Viceroy Hall is the jewel of Royal Ritz. Overlooking the lush gardens and pool, this grand hall features mammoth chandeliers and intricate colonial motifs, providing a majestic backdrop for weddings and high-profile galas for up to 500 guests.",
       image: viceroyImg,
       linkText: "VIEW PROPOSAL"
     },
@@ -62,7 +62,7 @@ const Banquet = () => {
             <h2 className="banquet-intro-title">Host Unforgettable Moments</h2>
             <p className="banquet-intro-desc">
               From grand weddings steeped in tradition to high-stakes corporate summits,
-              Royal Ritiz offers a collection of distinguished venues that blend
+              Royal Ritz offers a collection of distinguished venues that blend
               historical charm with modern luxury.
             </p>
           </div>

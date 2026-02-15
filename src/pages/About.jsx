@@ -13,13 +13,13 @@ const About = () => {
     <>
       <HeroSection
         title="ABOUT US"
-        subtitle="Discover the heritage and hospitality that define Royal Ritiz."
+        subtitle="Discover the heritage and hospitality that define Royal Ritz."
         image={hotel}
       />
 
       <AboutCard
-        title="Welcome to Royal Ritiz"
-        description="Step into a world of luxury at the premier 5-star hotel in Hubballi. Royal Ritiz offers the perfect fusion of European elegance and warm Indian hospitality. Whether you are here for business or leisure, our commitment to excellence ensures a stay that is truly unforgettable."
+        title="Welcome to Royal Ritz"
+        description="Step into a world of luxury at the premier 5-star hotel in Hubballi. Royal Ritz offers the perfect fusion of European elegance and warm Indian hospitality. Whether you are here for business or leisure, our commitment to excellence ensures a stay that is truly unforgettable."
         image={hotel}
       />
 

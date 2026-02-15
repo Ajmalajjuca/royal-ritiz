@@ -1,12 +1,44 @@
 .about-card-section {
-  padding: 100px 0;
-  background-color: #fff;
+  padding: 120px 0;
+  background-color: #F8F5F2; /* Cream background like Claridges */
+  position: relative;
+  overflow: hidden;
+}
+
+/* --- Watermarks --- */
+.about-card-section .watermark {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.05;
+}
+
+.about-card-section .watermark.palm-leaf {
+  width: 400px;
+  height: 400px;
+  background-image: url('../../optimized-assets/palm-leaf.avif');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about-card-section .watermark.top-left {
+  top: 50px;
+  left: -100px;
+  transform: rotate(45deg);
+}
+
+.about-card-section .watermark.bottom-right {
+  bottom: 50px;
+  right: -100px;
+  transform: rotate(-135deg);
 }
 
 .about-card-container {
   display: flex;
   align-items: center;
   gap: 80px;
+  position: relative;
+  z-index: 1;
 }
 
 /* Image Side */
@@ -14,7 +46,7 @@
   flex: 1;
   height: 550px;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.15);
 }
 
 .about-card-image {
@@ -33,27 +65,39 @@
   flex: 1;
 }
 
+.about-decorator {
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.about-decorator .decorative-line {
+  height: 40px;
+  width: 1px;
+}
+
 .about-subtitle {
   font-family: var(--font-body);
   font-size: 0.85rem;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   color: var(--accent-gold);
   margin-bottom: 20px;
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 .about-title {
   font-family: var(--font-heading);
-  font-size: 3rem;
-  color: var(--text-dark);
+  font-size: 3.5rem;
+  color: #000;
   margin-bottom: 30px;
-  line-height: 1.2;
+  line-height: 1.1;
+  letter-spacing: 1px;
 }
 
 .about-description {
   font-family: var(--font-body);
-  font-size: 1.05rem;
-  color: var(--text-muted);
+  font-size: 1.1rem;
+  color: #333;
   line-height: 1.8;
   margin-bottom: 40px;
 }

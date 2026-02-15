@@ -94,8 +94,21 @@
   color: #555;
 }
 
-/* Section Gaps */
-.banquet-card-section {
-  position: relative;
-  z-index: 1;
+@media (max-width: 768px) {
+  .banquet-page-content { padding: 40px 0; }
+  
+  .banquet-page-content .events-text,
+  .banquet-page-content .venues-text {
+    font-size: 6rem;
+    top: 50px;
+  }
+  
+  .banquet-intro-title { font-size: 2.2rem; }
+  .banquet-intro { margin-bottom: 60px; }
+  
+  .banquet-page-content .palm-leaf {
+    width: 300px;
+    height: 300px;
+  }
 }
+

@@ -12,9 +12,9 @@ const InstagramSection = () => {
     <section className="instagram-section">
       <div className="container">
         <div className="insta-header">
-          <h2 className="insta-hashtag">#royalritiznewdelhi</h2>
+          <h2 className="insta-hashtag">#royalRitznewHubli</h2>
           <p className="insta-subtext">
-            Visit <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">@royalritiznewdelhi</a> on @ to discover unforgettable guest experiences at Royal Ritiz New Delhi.
+            Visit <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">@royalRitznewHubli</a> on @ to discover unforgettable guest experiences at Royal Ritz Hubli.
           </p>
         </div>
 

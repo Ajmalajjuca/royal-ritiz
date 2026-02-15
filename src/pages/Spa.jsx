@@ -22,7 +22,7 @@ const Spa = () => {
     {
       subtitle: "Element: Water",
       title: "WAVES (ROOFTOP POOL)",
-      description: "Ascend to our rooftop sanctuary, where the pristine pool meets the Delhi skyline. A tranquil oasis for a refreshing morning swim or a sunset lounge, offering breathtaking city views and a feeling of being 'at one with the sky' within elegant glass-walled surroundings.",
+      description: "Ascend to our rooftop sanctuary, where the pristine pool meets the Hubli skyline. A tranquil oasis for a refreshing morning swim or a sunset lounge, offering breathtaking city views and a feeling of being 'at one with the sky' within elegant glass-walled surroundings.",
       image: poolImg,
       linkText: "EXPLORE POOL"
     },
@@ -60,7 +60,7 @@ const Spa = () => {
         <div className="container">
           <div className="spa-intro">
             <span className="spa-intro-subtitle">A Sanctuary of Refinement</span>
-            <h2 className="spa-intro-title">Cinqtuair at Royal Ritiz</h2>
+            <h2 className="spa-intro-title">Cinqtuair at Royal Ritz</h2>
             <p className="spa-intro-desc">
               Inspired by the five basic elements of nature—earth, water, air, fire, and space—
               Cinqtuair Spa offers an immersive journey into tranquility.

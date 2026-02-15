@@ -26,7 +26,7 @@ const Restaurant = () => {
     {
       title: "Sevilla",
       subtitle: "MEDITERRANEAN ROMANCE",
-      description: "Step into our Spanish sanctuary, an award-winning destination set amidst lush gardens. With open-air canopies and the smoky aromas of our Josper oven, Sevilla brings the soul of the Mediterranean to the heart of Delhi.",
+      description: "Step into our Spanish sanctuary, an award-winning destination set amidst lush gardens. With open-air canopies and the smoky aromas of our Josper oven, Sevilla brings the soul of the Mediterranean to the heart of Hubli.",
       image: sevillaImg,
       details: [
         { label: "Cuisine", value: "Spanish & Mediterranean" },
@@ -78,8 +78,8 @@ const Restaurant = () => {
 
       <section className="restaurant-page-content">
         {/* Background Watermarks */}
-        <div className="watermark dining-text">DINING</div>
-        <div className="watermark culinary-text">CULINARY</div>
+        {/* <div className="watermark dining-text">DINING</div> */}
+        {/* <div className="watermark culinary-text">CULINARY</div> */}
         <div className="watermark palm-leaf top-right"></div>
         <div className="watermark palm-leaf bottom-left"></div>
         <div className="watermark logo-mark center-right"></div>
@@ -87,7 +87,7 @@ const Restaurant = () => {
         <div className="container">
           <div className="restaurant-intro">
             <span className="restaurant-intro-subtitle">A Gastronomic Odyssey</span>
-            <h2 className="restaurant-intro-title">Dining at Royal Ritiz</h2>
+            <h2 className="restaurant-intro-title">Dining at Royal Ritz</h2>
             <p className="restaurant-intro-desc">
               From the colonial charm of an English deli to the romantic allure of a Spanish garden,
               our award-winning restaurants offer a tapestry of global flavors.

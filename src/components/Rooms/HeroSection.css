@@ -14,8 +14,9 @@
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center;
+  background-position: center 30%; /* Slightly higher focus for building shots */
 }
+
 
 .inner-hero-overlay {
   position: absolute;

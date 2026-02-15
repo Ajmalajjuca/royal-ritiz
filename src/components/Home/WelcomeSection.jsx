@@ -23,17 +23,17 @@ const WelcomeSection = () => {
                             The Capitol of Luxury in India's Capital
                         </h2>
                         <h4 className="welcome-subtitle">
-                            Royal Ritiz New Delhi
+                            Royal Ritz Hubli
                         </h4>
 
                         <div className="welcome-body">
                             <p>
-                                Our flagship hotel in New Delhi epitomises exceptional
+                                Our flagship hotel in Hubli epitomises exceptional
                                 hospitality by seamlessly blending timeless elegance with
                                 modern luxury, crafting memorable experiences in the
                                 heart of the capital city. Established in 1955, our esteemed
                                 luxury establishment has stood as a beacon of excellence
-                                in Delhi from its inception.
+                                in Hubli from its inception.
                             </p>
                             <p>
                                 From rooms that exude old-world charm to event spaces of
