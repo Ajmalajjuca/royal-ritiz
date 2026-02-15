@@ -1,24 +1,36 @@
 import React from "react";
-import HeroSection from "../components/Home/HeroSection";
-import AmenitiesSection from "../components/Home/AmenitiesSection";
-import RoomsSection from "@/components/Home/RoomsSection";
-import OurServices from "@/components/Home/OurServices";
-import GoogleReviews from "@/components/Home/GoogleReviews";
+import HeroSection from "@/components/Home/HeroSection";
+import WelcomeSection from "@/components/Home/WelcomeSection";
+import IntroductionSection from "@/components/Home/IntroductionSection";
+import DiningSlider from "@/components/Home/DiningSlider";
+import BenefitsSection from "@/components/Home/BenefitsSection";
+import EventsSection from "@/components/Home/EventsSection";
+import NewsletterSection from "@/components/Home/NewsletterSection";
 import InstagramSection from "@/components/Home/InstagramSection";
-import HeroScroll from "@/components/Home/HeroScroll";
+import RoomsSection from "@/components/Home/RoomsSection";
+import GoogleReviews from "@/components/Home/GoogleReviews";
+
 const Home = () => {
   return (
     <>
       <HeroSection />
-      {/* <HeroScroll /> */}
-      <div className="amenities-section">
 
-        <AmenitiesSection />
-      </div>
-      
+      <WelcomeSection />
+
+      <IntroductionSection />
+
+      <DiningSlider />
+
+      <BenefitsSection />
+
+      <EventsSection />
+
       <RoomsSection />
-      <OurServices />
+
       <GoogleReviews />
+
+      {/* <NewsletterSection /> */}
+
       <InstagramSection />
     </>
   );

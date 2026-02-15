@@ -4,65 +4,67 @@ import { Link } from "react-router-dom";
 import room1 from '../../optimized-assets/rooms1.webp';
 import room2 from '../../optimized-assets/room1.webp';
 import room3 from '../../optimized-assets/rooms2.webp';
+
 const rooms = [
   {
-    title: "Executive Rooms",
-    description:
-      "Rooms across various categories. These fully spacious rooms include comfortable washrooms and maintain the highest standards of hygiene for your comfort",
-    image:
-      room1,
+    title: "Premium King",
+    description: "Experience ultimate comfort in our Premium King Bed Rooms featuring elegant interiors.",
+    image: room1,
+    link: "/rooms/premium-king-bed-room"
   },
   {
-    title: "Delux Rooms",
-    description:
-      "Experience comfort and elegance in our Deluxe Room featuring modern interiors, a cozy queen-sized bed, and green views.",
-    image:
-      room2,
+    title: "The Suite",
+    description: "Indulge in our spacious Suite Rooms with separate living areas and panoramic views.",
+    image: room2,
+    link: "/rooms/suite-room"
   },
   {
-    title: "Suites",
-    description:
-      "Enjoy the luxury of space and sophistication with a private lounge area, premium bedding, and a balcony overlooking the skyline.",
-    image:
-      room3,
-  },
-  {
-    title:"Family Room",
-    description:"Enjoy the luxury of space and sophistication with a private lounge area, premium bedding, and a balcony overlooking the skyline.",
-    image:room1,
+    title: "The Villa",
+    description: "Escape to our charming Villa with private garden access and tranquil surroundings.",
+    image: room3,
+    link: "/rooms/cottage-room"
   }
 ];
 
-const OurServices = () => {
+const RoomsSection = () => {
   return (
-    <section className="our-services">
-      <div className="services-header">
-        <h2>OUR ROOMS</h2>
-      </div>
-      <div className="services-container">
-        {rooms.map((room, index) => (
-          <div className="service-card" key={index}>
-            <div className="service-image-container">
-              <img
-                src={room.image}
-                alt={room.title}
-                className="service-image"
-              />
-              <div className="image-overlay"></div>
-            </div>
-            <div className="service-content">
-              <h3>{room.title}</h3>
-              <p>{room.description}</p>
-              <Link to='/rooms'>
- <button className="learn-more-btn" >Check Availability</button>
-              </Link>
-             
-            </div>
+    <section className="rooms-section">
+      <div className="container">
+
+        <div className="rooms-header-premium">
+          <div className="decorative-line-box">
+            <div className="vertical-line"></div>
+            <div className="diamond-decorator top"></div>
+            <div className="diamond-decorator bottom"></div>
           </div>
-        ))}
+
+          <div className="header-text-content">
+            <h2 className="rooms-main-title">Stay With Us</h2>
+            <h4 className="rooms-main-subtitle">Curated Accommodation for Every Need</h4>
+            <Link to="/rooms" className="rooms-all-btn">VIEW ALL ROOMS</Link>
+          </div>
+        </div>
+
+        <div className="rooms-grid">
+          {rooms.map((room, index) => (
+            <Link to={room.link} className="room-item-card" key={index}>
+              <div className="room-card-image-wrapper">
+                <img src={room.image} alt={room.title} className="room-card-img" />
+                <div className="room-card-overlay">
+                  <span className="room-explore">EXPLORE</span>
+                </div>
+              </div>
+              <div className="room-card-content">
+                <h3 className="room-card-title">{room.title}</h3>
+                <p className="room-card-desc">{room.description}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+
       </div>
     </section>
   );
 };
 
-export default OurServices;
+export default RoomsSection;

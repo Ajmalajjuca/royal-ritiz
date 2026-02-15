@@ -1,0 +1,321 @@
+.rooms-page-content {
+  position: relative;
+  background-color: #fff;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.rooms-page-content.suites-section {
+  padding-bottom: 50px;
+}
+
+.rooms-page-content.rooms-list-section {
+  padding-top: 50px;
+  padding-bottom: 120px;
+}
+
+
+/* Watermarks */
+.rooms-page-content .watermark {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1; /* Bumped to ensure visibility over background */
+}
+
+.rooms-page-content .suites-text {
+  top: 9%;
+  left: -5%;
+  font-family: var(--font-heading);
+  font-size: 20rem;
+  color: #8D7256;
+  opacity: 0.1;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.rooms-page-content .rooms-text {
+  top: 5%;
+  right: -5%;
+  font-family: var(--font-heading);
+  font-size: 20rem;
+  color: #8D7256;
+  opacity: 0.1;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.rooms-page-content .palm-leaf.bottom-left {
+  bottom: -50px;
+  left: -50px;
+  width: 600px;
+  height: 600px;
+  background-image: url("/images/watermark%20palm-leaf.avif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.4; /* Increased from 0.12 for better visibility */
+}
+
+.rooms-page-content .palm-leaf.bottom-right {
+  bottom: -50px;
+  right: -50px;
+  width: 600px;
+  height: 600px;
+  background-image: url("/images/watermark%20palm-leaf.avif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  transform: scaleX(-1);
+}
+
+.rooms-page-content .logo-mark.top-right {
+  top: 10%;
+  right: 5%;
+  width: 350px;
+  height: 350px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='50' font-family='Playfair Display' font-size='40' fill='%238D7256'%3ERR%3C/text%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+}
+
+.rooms-page-content .logo-mark.top-left {
+  top: 10%;
+  left: 5%;
+  width: 350px;
+  height: 350px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='50' font-family='Playfair Display' font-size='40' fill='%238D7256'%3ERR%3C/text%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+}
+
+
+.rooms-intro-section {
+  text-align: center;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.rooms-intro-title {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.rooms-intro-section.mirrored {
+  text-align: right;
+  margin-left: auto;
+  margin-right: calc(24%);
+}
+
+/* Slider Style List */
+.rooms-slider-relative {
+  position: relative;
+  width: 100%;
+}
+
+.rooms-slider-relative.mirrored {
+  overflow: visible; /* Ensure content can bleed past left edge if needed */
+}
+
+.rooms-premium-slider {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 20px 0 50px;
+  scroll-snap-type: x mandatory;
+}
+
+.suites-slider {
+  margin-left: 24%;
+  padding-left: 0;
+}
+
+.rooms-slider {
+  margin-left: 0;
+  margin-right: 24%;
+  padding-right: 0;
+  flex-direction: row-reverse; /* Mirror the items */
+  justify-content: flex-start; /* Items 'start' from the right gap */
+}
+
+
+.rooms-premium-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.room-card-premium {
+  flex: 0 0 550px;
+  position: relative;
+  z-index: 1;
+  scroll-snap-align: start;
+}
+
+.rooms-slider .room-card-premium {
+  scroll-snap-align: start; /* Now logical start is right in row-reverse */
+}
+
+
+.room-card-img-box {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.room-card-image-main {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.room-card-premium:hover .room-card-image-main {
+  transform: scale(1.05);
+}
+
+.room-card-info-box {
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 280px; /* Fixed height for text content area to align buttons */
+}
+
+.room-card-cat {
+  display: block;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--accent-gold);
+  margin-bottom: 12px;
+}
+
+.room-card-tit {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  min-height: 4.4rem; /* Ensure 2 lines of title space */
+}
+
+.room-card-desc-text {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  max-width: 500px;
+  flex: 1; /* Take up all available space to push button down */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Limit to 4 lines for perfect alignment */
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+}
+
+.room-card-btn {
+  align-self: flex-start; /* Keep button left-aligned */
+  display: inline-block;
+  background-color: #8D7256;
+  color: #fff;
+  border: none;
+  padding: 16px 50px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: auto; /* Final push to bottom */
+}
+
+
+.room-card-btn:hover {
+  background-color: #725b45;
+}
+
+/* Slider Navigation */
+.rooms-nav-controls {
+  position: absolute;
+  top: 300px;
+  transform: translateY(-50%);
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.rooms-nav-btn {
+  width: 55px;
+  height: 55px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: all 0.3s ease;
+}
+
+/* Suites Arrow Logic (Left Gap) */
+.suites-section .rooms-nav-btn.left {
+  margin-left: calc(24% - 80px);
+}
+
+.suites-section .rooms-nav-btn.right {
+  margin-right: 20px;
+}
+
+/* Rooms Arrow Logic (Right Gap) */
+.rooms-list-section .rooms-nav-btn.left {
+  margin-left: 20px;
+}
+
+.rooms-list-section .rooms-nav-btn.right {
+  margin-right: calc(24% - 80px);
+}
+
+.rooms-nav-btn:hover {
+  background: var(--accent-gold);
+  color: #fff;
+}
+
+
+.rooms-nav-btn span {
+  font-size: 2rem;
+  color: #666;
+}
+
+.rooms-nav-btn:hover span {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .rooms-intro-title { font-size: 2.8rem; }
+  .room-card-premium { flex: 0 0 100%; padding-right: 5%; }
+  .rooms-premium-slider { margin-left: 5%; padding-left: 0; }
+  .rooms-nav-btn.left { margin-left: 10px; }
+}
+
+@media (max-width: 576px) {
+  .rooms-intro-title { font-size: 2.2rem; }
+  .rooms-premium-slider { margin-left: 0; padding-left: 5%; } /* Revert to padding for small mobile to allow edge-to-edge touch scroll */
+  .rooms-nav-controls { display: none; }
+}
+

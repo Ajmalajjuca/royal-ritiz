@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [hovered, setHovered] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { path: "/", label: "Home" },
-    { path: "/rooms", label: "Rooms" },
-    { path: "/restaurant", label: "Restaurant" },
-    { path: "/banquet", label: "Banquet" },
-    { path: "/spa", label: "Spa" },
-    { path: "/about", label: "About Us" },
+    { path: "/rooms", label: "ROOMS & SUITES" },
+    { path: "/restaurant", label: "DINING" },
+    { path: "/spa", label: "WELLNESS" },
+    { path: "/banquet", label: "EVENTS" },
+    { path: "/about", label: "ABOUT US" },
   ];
 
   useEffect(() => {
@@ -21,45 +21,51 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
-    <nav
-      className={`navbar ${scrolled ? "scrolled" : ""} ${
-        hovered ? "hovered" : ""
-      }`}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-    >
-      {/* Row 1 */}
-      <div className="navbar-top">
-        <div className="navbar-left">
-          <span className="navbar-global">GLOBAL</span>
-          <span className="divider">|</span>
-          <span className="navbar-location">HUBALI</span>
-        </div>
-
-        <div className="navbar-center">
+    <nav className={`navbar ${scrolled ? "scrolled" : ""} ${mobileMenuOpen ? "mobile-open" : ""}`}>
+      <div className="navbar-container">
+        {/* Left: Logo */}
+        <div className="navbar-logo-container">
           <Link to="/" className="navbar-logo">
-            Royal Ritis
+            ROYAL RITIZ
           </Link>
-
-          {/* 📰 Location Ticker below the logo */}
-          <div className="news-ticker">
-            <div className="ticker-content">
-              <span>HUBLI • BUNKERS • BELGAUM</span>
-              <span>HUBLI • BUNKERS • BELGAUM</span>
-              <span>HUBLI • BUNKERS • BELGAUM</span>
-            </div>
-          </div>
         </div>
 
-        <div className="navbar-right">
-          <button className="book-now-btn">BOOK NOW</button>
+        {/* Center/Right: Desktop Links */}
+        <div className="navbar-links-container">
+          <ul className="navbar-links">
+            {navLinks.map((link) => (
+              <li key={link.path}>
+                <NavLink
+                  to={link.path}
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active-link" : "nav-link"
+                  }
+                >
+                  {link.label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Far Right: Book Now & Mobile Toggle */}
+        <div className="navbar-actions">
+          <button className="book-btn">BOOK A STAY</button>
+
+          <div className="mobile-toggle" onClick={toggleMobileMenu}>
+            {mobileMenuOpen ? <FaTimes /> : <FaBars />}
+          </div>
         </div>
       </div>
 
-      {/* Row 2 */}
-      <div className="navbar-bottom">
-        <ul className="navbar-links">
+      {/* Mobile Menu Overlay */}
+      <div className={`mobile-menu ${mobileMenuOpen ? "open" : ""}`}>
+        <ul className="mobile-links">
           {navLinks.map((link) => (
             <li key={link.path}>
               <NavLink
@@ -67,6 +73,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   isActive ? "active-link" : "nav-link"
                 }
+                onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}
               </NavLink>
@@ -79,3 +86,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

@@ -1,0 +1,124 @@
+.dining-section {
+  background-color: #fafafa;
+  padding: 100px 0;
+}
+
+.dining-header {
+  margin-bottom: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-desc {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+/* Grid */
+.dining-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* Card */
+.dining-card {
+  background: transparent;
+  transition: transform 0.3s ease;
+}
+
+.dining-card:hover {
+  transform: translateY(-5px);
+}
+
+.dining-image-wrapper {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
+  border-radius: 4px;
+}
+
+.dining-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.dining-card:hover .dining-image {
+  transform: scale(1.08);
+}
+
+.dining-content {
+  padding: 0 15px;
+}
+
+.dining-title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dining-subtitle {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--accent-gold);
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.dining-desc {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn-link {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid var(--accent-gold);
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+.btn-link:hover {
+  color: var(--accent-gold);
+  border-bottom-color: transparent;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .dining-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dining-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .dining-image-wrapper {
+    height: 250px;
+  }
+}
+

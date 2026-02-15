@@ -1,0 +1,189 @@
+/* Heritage Section Layout */
+.heritage-section {
+  position: relative;
+  padding: 120px 0;
+  background-color: #fff;
+  overflow: hidden;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+/* Background Layer */
+.heritage-bg-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  z-index: 0;
+}
+
+.heritage-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heritage-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #fff 15%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0.1) 100%);
+}
+
+/* Container for Frame and Text */
+.heritage-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Floating Frame */
+.heritage-frame-wrapper {
+  flex: 0 0 500px; /* Specific width */
+  position: relative;
+  margin-right: 60px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+  background: #fff;
+  padding: 12px; /* White border effect */
+}
+
+.heritage-frame-inner {
+  width: 100%;
+  height: 600px; /* Tall portrait */
+  overflow: hidden;
+}
+
+.heritage-frame-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.heritage-frame-wrapper:hover .heritage-frame-image {
+  transform: scale(1.05);
+}
+
+/* Content */
+.heritage-content {
+  flex: 1;
+  max-width: 550px;
+}
+
+.heritage-title {
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.heritage-subtitle {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.8rem;
+  color: var(--accent-gold);
+  font-weight: 400;
+  margin-bottom: 45px;
+  display: block;
+}
+
+.heritage-btn {
+  background-color: #8D7256; /* Dark Brown/Gold */
+  color: #fff;
+  border: none;
+  padding: 16px 45px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.heritage-btn:hover {
+  background-color: #5e4b35;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .heritage-title {
+    font-size: 3rem;
+  }
+  
+  .heritage-frame-wrapper {
+    flex: 0 0 400px;
+  }
+  
+  .heritage-frame-inner {
+    height: 500px;
+  }
+}
+
+@media (max-width: 900px) {
+  .heritage-section {
+    flex-direction: column;
+    padding: 80px 0;
+    justify-content: center;
+  }
+  
+  .heritage-bg-wrapper {
+    width: 100%;
+    height: 100%;
+    opacity: 0.15; /* Subtle background on mobile */
+  }
+  
+  .heritage-bg-overlay {
+    background: linear-gradient(to bottom, transparent, #fff);
+  }
+  
+  .heritage-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 50px;
+  }
+  
+  .heritage-frame-wrapper {
+    margin-right: 0;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .heritage-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .heritage-title {
+    font-size: 2.5rem;
+  }
+  
+  .heritage-subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .heritage-frame-inner {
+    height: 400px;
+  }
+  
+  .heritage-title {
+    font-size: 2rem;
+  }
+}

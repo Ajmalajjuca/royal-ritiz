@@ -1,72 +1,172 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import HeroSection from "../components/Rooms/HeroSection";
-import RoomCard from "../components/Rooms/RoomCard";
-
+import "./Rooms.css";
 import room1 from "../optimized-assets/rooms1.webp";
 import room2 from "../optimized-assets/room1.webp";
 import room3 from "../optimized-assets/rooms2.webp";
+import heroImage from "../optimized-assets/rooms1.webp";
 
 const Rooms = () => {
-  const rooms = [
+  const suitesSliderRef = React.useRef(null);
+  const roomsSliderRef = React.useRef(null);
+
+  const suiteRoomsDataset = [
     {
-      title: "Premium King Bed Room",
-      size: "35 m² / 377 ft²",
-      guests: "Up to 2 Guests",
-      view: "City view",
-      description:
-        "Experience ultimate comfort in our Premium King Bed Rooms featuring elegant interiors, premium furnishings, and luxurious amenities. Perfect for a romantic getaway or business travel with stunning city views.",
+      category: "Suite",
+      title: "EXECUTIVE SUITE",
+      description: "Our pinnacle offering in Lutyens Delhi for the crème de la crème is this exquisite suite. An opulent living area precedes a luxurious bedroom adorned with handpicked artwork. Every detail reflects timeless elegance and thoughtful design, and all of which ensure your stay with us is paramount.",
       image: room1,
-      imageAlt: "Premium King Bed Room",
+      link: "/rooms/executive-suite"
     },
     {
-      title: "Suite Room",
-      size: "50 m² / 538 ft²",
-      guests: "Up to 3 Guests",
-      view: "City view",
-      description:
-        "Indulge in our spacious Suite Rooms with separate living areas, elegant décor, and premium amenities. Ideal for extended stays or families seeking extra comfort and space with panoramic city vistas.",
+      category: "Suite",
+      title: "LUXURY SUITE",
+      description: "A suite exuding old-school charm and luxury, nestled in the renowned Lutyens Delhi, synonymous with colonial elegance. This suite boasts aesthetically pleasing interiors and a large window offers calming views of the serene surroundings. Enhanced by an array of amenities and a spacious walk-in closet, they prepare you elegantly for the day ahead.",
       image: room2,
-      imageAlt: "Suite Room",
+      link: "/rooms/luxury-suite"
     },
     {
-      title: "The Villa",
-      size: "45 m² / 484 ft²",
-      guests: "Up to 2 Guests",
-      view: "Garden view",
-      description:
-        "Escape to our charming Villa access and tranquil garden views. These intimate accommodations offer a perfect blend of comfort and serenity in a unique, secluded setting",
+      category: "Suite",
+      title: "LUXURY SUITE WITH WHIRLPOOL",
+      description: "Exuding a classic and time-honoured ambience, this sprawling world-suite aims to elevate relaxation to its utmost pinnacle. With plush beds and high-speed wireless Internet, cable satellite and a private indulgent whirlpool, ensuring an unparalleled stay, presented within a colonial-inspired suite.",
       image: room3,
-      imageAlt: "The Villa",
-    },
-    {
-      title: "Executive rooms (with both King size n` Twin Beds)",
-      size: "32 m² / 344 ft²",
-      guests: "Up to 2 Guests",
-      view: "City view",
-      description:
-        "Our Superior Twin Rooms feature two comfortable beds, elegant furnishings, and all modern amenities. Perfect for friends or colleagues traveling together, with beautiful city views and spacious accommodations.",
-      image: room1,
-      imageAlt: "Superior Twin Room",
+      link: "/rooms/luxury-suite-whirlpool"
     },
   ];
 
+  const deluxeRoomsDataset = [
+    {
+      category: "Deluxe",
+      title: "DELUXE KING BED ROOM - POOL VIEW",
+      description: "This room radiates colonial charm and elegance with ornamental side lamps and unique artwork that chronicles Delhi's rich history. Complemented by a sumptuous soft bed, luxurious amenities, and breathtaking views of a pristine pool, we provide a modern yet culturally enriched heritage stay option.",
+      image: room1,
+      link: "/rooms/deluxe-pool-view"
+    },
+    {
+      category: "Luxury",
+      title: "LUXURY KING BED ROOM",
+      description: "An elegant room aglow with sensor-activated lighting upon entry, designed to highlight its exceptional features: a sumptuous 400-thread count mattress, graceful rosewood furnishings, and expansive windows inviting the sun's gentle embrace.",
+      image: room2,
+      link: "/rooms/luxury-king"
+    },
+    {
+      category: "Luxury",
+      title: "LUXURY TWIN BED ROOM WITH BALCONY",
+      description: "Ideal for a guest to share a coffee while overlooking the stunning greenery or the pristine pool, our balcony room is your quintessential vintage-style retreat. Featuring modern amenities within timeless colonial décor, this room ensures your stay is both sophisticated and memorable.",
+      image: room3,
+      link: "/rooms/luxury-twin-balcony"
+    }
+  ];
+
+  const scrollSlider = (ref, direction) => {
+    if (ref.current) {
+      const scrollAmount = 590; // 550px card width + 40px gap
+      ref.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
-    <>
-      <HeroSection />
-      {rooms.map((room, index) => (
-        <RoomCard
-          key={index}
-          title={room.title}
-          size={room.size}
-          guests={room.guests}
-          view={room.view}
-          description={room.description}
-          image={room.image}
-          imageAlt={room.imageAlt}
-        />
-      ))}
-    </>
+    <div className="rooms-page-wrapper">
+      <HeroSection
+        title="ROOMS & SUITES"
+        image={heroImage}
+      />
+
+      {/* SUITES SECTION */}
+      <section className="rooms-page-content suites-section">
+        <div className="watermark suites-text">SUITES</div>
+        <div className="watermark palm-leaf bottom-left"></div>
+        <div className="watermark logo-mark top-right"></div>
+
+        <div className="container">
+          <div className="rooms-intro-section">
+            <h2 className="rooms-intro-title">
+              Enjoy High-end Hospitality <br />
+              With Our Rooms in New Delhi
+            </h2>
+          </div>
+        </div>
+
+        <div className="rooms-slider-relative">
+          <div className="rooms-nav-controls">
+            <button className="rooms-nav-btn left" onClick={() => scrollSlider(suitesSliderRef, 'left')}>
+              <span>‹</span>
+            </button>
+            <button className="rooms-nav-btn right" onClick={() => scrollSlider(suitesSliderRef, 'right')}>
+              <span>›</span>
+            </button>
+          </div>
+
+          <div className="rooms-premium-slider suites-slider" ref={suitesSliderRef}>
+            {suiteRoomsDataset.map((room, index) => (
+              <div className="room-card-premium" key={index}>
+                <div className="room-card-img-box">
+                  <img src={room.image} alt={room.title} className="room-card-image-main" />
+                </div>
+                <div className="room-card-info-box">
+                  <span className="room-card-cat">{room.category}</span>
+                  <h3 className="room-card-tit">{room.title}</h3>
+                  <p className="room-card-desc-text">{room.description}</p>
+                  <Link to={room.link} className="room-card-btn">EXPLORE</Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ROOMS SECTION */}
+      <section className="rooms-page-content rooms-list-section">
+        <div className="watermark rooms-text">ROOMS</div>
+        <div className="watermark palm-leaf bottom-right"></div>
+        <div className="watermark logo-mark top-left"></div>
+
+        <div className="container">
+          <div className="rooms-intro-section mirrored">
+            <h2 className="rooms-intro-title">
+              Exquisite Comfort <br />
+              In Every Corner
+            </h2>
+          </div>
+        </div>
+
+        <div className="rooms-slider-relative mirrored">
+          <div className="rooms-nav-controls">
+            <button className="rooms-nav-btn left" onClick={() => scrollSlider(roomsSliderRef, 'left')}>
+              <span>‹</span>
+            </button>
+            <button className="rooms-nav-btn right" onClick={() => scrollSlider(roomsSliderRef, 'right')}>
+              <span>›</span>
+            </button>
+          </div>
+
+          <div className="rooms-premium-slider rooms-slider" ref={roomsSliderRef}>
+            {deluxeRoomsDataset.map((room, index) => (
+              <div className="room-card-premium" key={index}>
+                <div className="room-card-img-box">
+                  <img src={room.image} alt={room.title} className="room-card-image-main" />
+                </div>
+                <div className="room-card-info-box">
+                  <span className="room-card-cat">{room.category}</span>
+                  <h3 className="room-card-tit">{room.title}</h3>
+                  <p className="room-card-desc-text">{room.description}</p>
+                  <Link to={room.link} className="room-card-btn">EXPLORE</Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+
   );
 };
 
 export default Rooms;
+

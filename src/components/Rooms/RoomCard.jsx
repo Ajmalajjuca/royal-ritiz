@@ -1,44 +1,54 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./RoomCard.css";
 
-const RoomCard = ({ title, size, guests, view, description, image, imageAlt }) => {
-  const navigate = useNavigate();
-
-  // Generate a clean slug for the route (e.g., "Premium King Bed Room" → "premium-king")
-  const createSlug = (title) =>
-    title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-
-  const handleMoreDetails = () => {
-    const slug = createSlug(title);
-    navigate(`/rooms/${slug}`);
-  };
+const RoomCard = ({ title, size, guests, view, description, image, imageAlt, index, link }) => {
+  // Determine alignment based on index (even = image left, odd = image right)
+  const isReverse = index % 2 !== 0;
 
   return (
-    <section className="room-card">
-      <div className="room-card-image">
-        <img src={image} alt={imageAlt || title} />
-      </div>
+    <section className={`room-card-section ${isReverse ? "reverse" : ""}`}>
+      <div className="container room-card-container">
 
-      <div className="room-card-content">
-        <h2 className="room-name">{title}</h2>
-
-        <div className="room-specs">
-          <span className="spec-item">{size}</span>
-          <span className="spec-divider">|</span>
-          <span className="spec-item">{guests}</span>
-          <span className="spec-divider">|</span>
-          <span className="spec-item">{view}</span>
+        {/* Image Side */}
+        <div className="room-card-image-wrapper">
+          <img src={image} alt={imageAlt || title} className="room-card-image" />
         </div>
 
-        <p className="room-description">{description}</p>
+        {/* Content Side */}
+        <div className="room-card-content">
+          <h4 className="room-subtitle">ACCOMMODATION</h4>
+          <h2 className="room-title">{title}</h2>
 
-        <button className="details-btn" onClick={handleMoreDetails}>
-          MORE DETAILS
-        </button>
+          <div className="room-specs">
+            <div className="spec-item">
+              <span className="spec-label">Size</span>
+              <span className="spec-value">{size}</span>
+            </div>
+            <div className="spec-item">
+              <span className="spec-label">Occupancy</span>
+              <span className="spec-value">{guests}</span>
+            </div>
+            <div className="spec-item">
+              <span className="spec-label">View</span>
+              <span className="spec-value">{view}</span>
+            </div>
+          </div>
+
+          <p className="room-description">{description}</p>
+
+          <div className="room-actions">
+            <Link to={link || "#"} className="btn-primary">
+              VIEW DETAILS
+            </Link>
+            <button className="btn-secondary">BOOK NOW</button>
+          </div>
+        </div>
+
       </div>
     </section>
   );
 };
 
 export default RoomCard;
+

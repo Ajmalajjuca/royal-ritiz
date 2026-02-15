@@ -1,51 +1,91 @@
 import React from "react";
-import HeroSection from "../components/Banquet/HeroSection";
+import HeroSection from "../components/Rooms/HeroSection";
 import BanquetCard from "../components/Banquet/BanquetCard";
-import restaurant from '../optimized-assets/hotel.webp';
-import banquet from '../optimized-assets/banquet.webp';
-import spa from '../optimized-assets/spa.webp';
+import "./Banquet.css";
+
+// Images
+import banquetHero from '../optimized-assets/banquet.webp';
+import viceroyImg from '../optimized-assets/banquet.webp';
+import senateImg from '../optimized-assets/hotel.webp';
+import gardenImg from '../optimized-assets/HDR3.webp';
+import boardRoomImg from '../optimized-assets/spa.webp';
+
 const Banquet = () => {
-  const banquetHalls = [
+  const venues = [
     {
-      title: "SUGANI CONVENTION HALL",
-      description: "Our grandest banquet hall, perfect for large-scale events, conferences, and celebrations. The Royale features elegant décor, state-of-the-art audio-visual equipment, and can accommodate up to 600 guests in style and comfort",
-      image: banquet,
-      imageAlt: "SUGANI CONVENTION HALL"
+      subtitle: "ESTEEMED",
+      title: "VICEROY HALL",
+      description: "Steeped in history and regal splendor, Viceroy Hall is the jewel of Royal Ritiz. Overlooking the lush gardens and pool, this grand hall features mammoth chandeliers and intricate colonial motifs, providing a majestic backdrop for weddings and high-profile galas for up to 500 guests.",
+      image: viceroyImg,
+      linkText: "VIEW PROPOSAL"
     },
     {
-      title: "MAGNOLIA ",
-      description: "An intimate yet sophisticated venue ideal for corporate meetings, seminars, and social gatherings. The Opulence Hall combines modern amenities with classic elegance, accommodating up to 200 guests in a warm, inviting atmosphere.",
-      image: spa,
-      imageAlt: "Opulence Banquet Hall"
+      subtitle: "SOPHISTICATED",
+      title: "THE SENATE",
+      description: "Designed for the modern executive, The Senate offers an atmosphere of refined professionalism. With its wood-paneled walls and state-of-the-art conferencing technology, it is the ideal venue for strategy sessions, intimate press conferences, and executive board meetings for up to 80 delegates.",
+      image: senateImg,
+      linkText: "ENQUIRE NOW"
     },
     {
-      title: "THE HIDDEN PALACE",
-      description: "Experience refined luxury in our Elegance Hall, designed for premium events and exclusive gatherings. With its sophisticated design and premium facilities, this space is perfect for high-end celebrations and corporate functions for up to 200 guests.",
-      image:restaurant,
-      imageAlt: "Elegance Banquet Hall"
+      subtitle: "AL FRESCO",
+      title: "THE ROYAL GARDENS",
+      description: "Experience the charm of a vintage outdoor celebration in The Royal Gardens. Surrounded by centuries-old palms and manicured lawns, this versatile space transform into a magical venue for moonlit cocktails, sun-drenched brunches, or grand receptions under the stars.",
+      image: gardenImg,
+      linkText: "EXPLORE VENUE"
     },
     {
-      title: "BOARD ROOM",
-      description: "Our exclusive Board Room is perfect for executive meetings, strategic planning sessions, and intimate business gatherings. Equipped with cutting-edge technology and premium furnishings, it accommodates up to 35 guests in an atmosphere of professionalism and sophistication.",
-      image: spa,
-      imageAlt: "Board Room"
+      subtitle: "EXECUTIVELY",
+      title: "VICEREGAL BOARDROOM",
+      description: "An exclusive space for the inner circle, the Viceregal Boardroom combines comfort with cutting-edge technology. Tailored for discrete discussions and high-stakes negotiations, this room accommodates up to 25 guests in a setting that reflects timeless power and prestige.",
+      image: boardRoomImg,
+      linkText: "BOOK NOW"
     }
   ];
 
   return (
-    <>
-      <HeroSection />
-      {banquetHalls.map((hall, index) => (
-        <BanquetCard
-          key={index}
-          title={hall.title}
-          description={hall.description}
-          image={hall.image}
-          imageAlt={hall.imageAlt}
-        />
-      ))}
-    </>
+    <div className="banquet-page-wrapper">
+      <HeroSection
+        title="MEETINGS & EVENTS"
+        image={banquetHero}
+      />
+
+      <section className="banquet-page-content">
+        {/* Background Watermarks */}
+        {/* <div className="watermark events-text">EVENTS</div> */}
+        {/* <div className="watermark venues-text">VENUES</div> */}
+        <div className="watermark palm-leaf top-right"></div>
+        <div className="watermark palm-leaf bottom-left"></div>
+        <div className="watermark logo-mark center-right"></div>
+
+        <div className="container">
+          <div className="banquet-intro">
+            <h2 className="banquet-intro-title">Host Unforgettable Moments</h2>
+            <p className="banquet-intro-desc">
+              From grand weddings steeped in tradition to high-stakes corporate summits,
+              Royal Ritiz offers a collection of distinguished venues that blend
+              historical charm with modern luxury.
+            </p>
+          </div>
+        </div>
+
+        <div className="banquet-list">
+          {venues.map((venue, index) => (
+            <BanquetCard
+              key={index}
+              index={index}
+              subtitle={venue.subtitle}
+              title={venue.title}
+              description={venue.description}
+              image={venue.image}
+              linkText={venue.linkText}
+            />
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 
 export default Banquet;
+
+

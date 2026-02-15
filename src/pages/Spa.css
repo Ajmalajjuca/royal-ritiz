@@ -1,0 +1,110 @@
+.spa-page-wrapper {
+  background-color: #fff;
+}
+
+.spa-page-content {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+/* Watermarks */
+.spa-page-content .watermark {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.spa-page-content .wellness-text {
+  top: 5%;
+  right: -5%;
+  font-family: var(--font-heading);
+  font-size: 18rem;
+  color: #8D7256;
+  opacity: 0.1;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.spa-page-content .sanctuary-text {
+  bottom: 15%;
+  left: -5%;
+  font-family: var(--font-heading);
+  font-size: 18rem;
+  color: #8D7256;
+  opacity: 0.1;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.spa-page-content .palm-leaf {
+  width: 600px;
+  height: 600px;
+  background-image: url("/images/watermark%20palm-leaf.avif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+}
+
+.spa-page-content .palm-leaf.top-left {
+  top: -50px;
+  left: -50px;
+}
+
+.spa-page-content .palm-leaf.bottom-right {
+  bottom: -50px;
+  right: -50px;
+  transform: scaleX(-1);
+}
+
+.spa-page-content .logo-mark {
+  width: 300px;
+  height: 300px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='50' font-family='Playfair Display' font-size='40' fill='%238D7256'%3ERR%3C/text%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+}
+
+.spa-page-content .logo-mark.center-left {
+  top: 35%;
+  left: 2%;
+}
+
+.spa-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.spa-intro-subtitle {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.4rem;
+  color: var(--accent-gold);
+  margin-bottom: 15px;
+  display: block;
+}
+
+.spa-intro-title {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.spa-intro-desc {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Section Wrapper */
+.spa-list {
+  position: relative;
+  z-index: 2;
+}

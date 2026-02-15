@@ -1,46 +1,53 @@
 import React from "react";
 import "./RestaurantCard.css";
-import img from '../../optimized-assets/hotel.webp';
-const RestaurantCard = () => {
+
+const RestaurantCard = ({ title, subtitle, description, image, details, index }) => {
+  const isReverse = index % 2 !== 0;
+
   return (
-    <section className="restaurant-card">
-      <div className="restaurant-card-image">
-        <img
-          src={img}
-          alt="Tangerine Restaurant"
-        />
-      </div>
+    <section className={`restaurant-card-section ${isReverse ? "reverse" : ""}`}>
+      <div className="container restaurant-card-container">
 
-      <div className="restaurant-card-content">
-        <h2 className="restaurant-name">ESCAPE (the BAR)</h2>
-        <p className="restaurant-description">
-          Welcome to <strong>ESCAPE (the BAR)</strong> experience our lounge bar, where you can enjoy comfortable seating, magnificent music, and a wide selection of professional cocktails and mocktails crafted by our skilled bartender. We offer a full range of liquors to suit every taste.
-        </p>
+        {/* Content Side */}
+        <div className="restaurant-card-content">
+          <div className="restaurant-header-decorator">
+            <div className="res-dec-line"></div>
+            <div className="res-dec-diamond"></div>
+          </div>
 
-        <div className="restaurant-details">
-          <div className="restaurant-detail">
-            <span className="label">Service</span>
-            <span className="value">A-la carte </span>
-          </div>
-          <div className="restaurant-detail">
-            <span className="label">Cuisine</span>
-            <span className="value">International</span>
-          </div>
-          <div className="restaurant-detail">
-            <span className="label">Dress code</span>
-            <span className="value">Smart Casual</span>
+          <span className="restaurant-card-label">{subtitle || "DINING EXPERIENCE"}</span>
+          <h2 className="restaurant-card-title">{title}</h2>
+
+          <p className="restaurant-card-description">{description}</p>
+
+          {details && details.length > 0 && (
+            <div className="restaurant-card-details">
+              {details.map((detail, idx) => (
+                <div className="restaurant-detail-item" key={idx}>
+                  <span className="detail-label">{detail.label}</span>
+                  <span className="detail-value">{detail.value}</span>
+                </div>
+              ))}
+            </div>
+          )}
+
+          <div className="restaurant-card-actions">
+            <button className="res-primary-btn">VIEW MENU</button>
+            <button className="res-ghost-btn">RESERVE A TABLE</button>
           </div>
         </div>
 
-        <div className="restaurant-actions">
-          <button className="visit-btn">VISIT RESTAURANT</button>
-          <a href="#" className="menu-link">
-            MENU <span className="menu-arrow">→</span>
-          </a>
+        {/* Image Side */}
+        <div className="restaurant-card-image-box">
+          <img src={image} alt={title} className="restaurant-card-image-main" />
+          <div className="restaurant-card-image-overlay"></div>
         </div>
+
       </div>
     </section>
   );
 };
 
 export default RestaurantCard;
+
+

@@ -1,0 +1,101 @@
+.banquet-page-wrapper {
+  background-color: #fff;
+}
+
+.banquet-page-content {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+/* Watermarks */
+.banquet-page-content .watermark {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.banquet-page-content .events-text {
+  top: 5%;
+  left: -5%;
+  font-family: var(--font-heading);
+  font-size: 18rem;
+  color: #8D7256;
+  opacity: 0.1;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.banquet-page-content .venues-text {
+  bottom: 10%;
+  right: -5%;
+  font-family: var(--font-heading);
+  font-size: 18rem;
+  color: #8D7256;
+  opacity: 0.1;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.banquet-page-content .palm-leaf {
+  width: 500px;
+  height: 500px;
+  background-image: url("/images/watermark%20palm-leaf.avif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+}
+
+.banquet-page-content .palm-leaf.top-right {
+  top: -50px;
+  right: -50px;
+  transform: rotate(90deg);
+}
+
+.banquet-page-content .palm-leaf.bottom-left {
+  bottom: -50px;
+  left: -50px;
+}
+
+.banquet-page-content .logo-mark {
+  width: 300px;
+  height: 300px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='50' font-family='Playfair Display' font-size='40' fill='%238D7256'%3ERR%3C/text%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+}
+
+.banquet-page-content .logo-mark.center-right {
+  top: 40%;
+  right: 2%;
+}
+
+.banquet-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.banquet-intro-title {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.banquet-intro-desc {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Section Gaps */
+.banquet-card-section {
+  position: relative;
+  z-index: 1;
+}

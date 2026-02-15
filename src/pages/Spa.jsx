@@ -1,70 +1,92 @@
 import React from "react";
-import HeroSection from "../components/Spa/HeroSection";
+import HeroSection from "../components/Rooms/HeroSection";
 import SpaCard from "../components/Spa/SpaCard";
-import restaurant from '../optimized-assets/hotel.webp';
-import banquet from '../optimized-assets/banquet.webp';
-import spa from '../optimized-assets/spa.webp';
-const Spa = () => {
-  const spaServices = [
-    {
-      title: "SAUNA",
-      description: "Experience the therapeutic benefits of our traditional Finnish sauna. Relax in our warm wooden sauna rooms, perfect for detoxification, stress relief, and muscle recovery. Our state-of-the-art facilities offer both dry and steam sauna options to enhance your wellness journey.",
-      image: restaurant,
-      imageAlt: "Sauna"
-    },
-    {
-      title: "WAVES (SWIMMING POOL)",
-      description: "Experience our swimming pool, located on the terrace with breathtaking city views and refreshing breezes. Relax and enjoy a unique kiss to the sky feeling from our top floor, surrounded by elegant glass walls.",
-      image: banquet,
-      imageAlt: "Wellness"
-    },
+import "./Spa.css";
 
+// Images
+import spaHero from '../optimized-assets/spa.webp';
+import therapyImg from '../optimized-assets/spa.webp';
+import poolImg from '../optimized-assets/banquet.webp';
+import massageImg from '../optimized-assets/hotel.webp';
+import yogaImg from '../optimized-assets/HDR3.webp';
+
+const Spa = () => {
+  const services = [
     {
-      title: "WELLNESS",
-      description: "Comprehensive wellness programs designed to rejuvenate your mind, body, and spirit. Our holistic approach combines ancient healing traditions with modern wellness techniques. From personalized fitness programs to mindfulness sessions, discover a complete path to optimal health and vitality.",
-      image: banquet,
-      imageAlt: "Wellness"
+      subtitle: "Cinqtuair Signature",
+      title: "ROYAL INDULGENCE MASSAGE",
+      description: "Our signature therapy combines ancient Indian healing traditions with contemporary wellness techniques. Experience a rhythmic massage using herb-infused oils tailored to your dosha, followed by a personalized steam session in our private spa suite.",
+      image: therapyImg,
+      linkText: "VIEW SPA MENU"
     },
     {
-      title: "OIL THERAPY",
-      description: "Indulge in our signature oil therapy treatments using premium essential oils from around the world. Each session is customized to address your specific needs, promoting deep relaxation, stress reduction, and natural healing. Our expert therapists blend therapeutic oils to create unique, personalized experiences.",
-      image: spa,
-      imageAlt: "Oil Therapy"
+      subtitle: "Element: Water",
+      title: "WAVES (ROOFTOP POOL)",
+      description: "Ascend to our rooftop sanctuary, where the pristine pool meets the Delhi skyline. A tranquil oasis for a refreshing morning swim or a sunset lounge, offering breathtaking city views and a feeling of being 'at one with the sky' within elegant glass-walled surroundings.",
+      image: poolImg,
+      linkText: "EXPLORE POOL"
     },
     {
-      title: "MASSAGE",
-      description: "Professional massage therapies ranging from Swedish and deep tissue to aromatherapy and hot stone. Our expert therapists will customize each session to your preferences, targeting tension, improving circulation, and promoting overall relaxation. Experience the perfect blend of traditional techniques and modern innovations.",
-      image: spa,
-      imageAlt: "Massage"
+      subtitle: "Holistic Wellness",
+      title: "AYURVEDIC RITUALS",
+      description: "Journey through time with our authentic Ayurvedic treatments. From Shirodhara to Kizhi Potali, our expert therapists use hand-pounded herbs and precious oils to restore your body's natural balance and rejuvenate your soul.",
+      image: massageImg,
+      linkText: "BOOK RITUAL"
     },
     {
-      title: "TREATMENTS",
-      description: "A wide array of spa treatments including body wraps, scrubs, and therapeutic baths. Experience luxury skincare and body care treatments using premium products. From detoxifying body wraps to hydrating treatments, our comprehensive menu addresses all your beauty and wellness needs.",
-      image: restaurant,
-      imageAlt: "Treatments"
-    },
-    {
-      title: "FACIALS",
-      description: "Expert facial treatments tailored to your skin type. From deep cleansing and anti-aging to hydrating and brightening facials, restore your natural glow. Our aestheticians use advanced techniques and premium skincare products to deliver visible results and radiant, healthy-looking skin.",
-      image: banquet,
-      imageAlt: "Facials"
+      subtitle: "Mind & Spirit",
+      title: "YOGA & MINDFULNESS",
+      description: "Find your center in our serene yoga studio. We offer personalized sessions in Hatha, Vinyasa, and Nidra yoga, along with guided meditation practices designed to soothe the mind and invigorate the spirit in the heart of the city.",
+      image: yogaImg,
+      linkText: "CLASS SCHEDULE"
     }
   ];
 
   return (
-    <>
-      <HeroSection />
-      {spaServices.map((service, index) => (
-        <SpaCard
-          key={index}
-          title={service.title}
-          description={service.description}
-          image={service.image}
-          imageAlt={service.imageAlt}
-        />
-      ))}
-    </>
+    <div className="spa-page-wrapper">
+      <HeroSection
+        title="SPA & WELLNESS"
+        image={spaHero}
+      />
+
+      <section className="spa-page-content">
+        {/* Background Watermarks */}
+        {/* <div className="watermark wellness-text">WELLNESS</div> */}
+        {/* <div className="watermark sanctuary-text">SANCTUARY</div> */}
+        <div className="watermark palm-leaf top-left"></div>
+        <div className="watermark palm-leaf bottom-right"></div>
+        <div className="watermark logo-mark center-left"></div>
+
+        <div className="container">
+          <div className="spa-intro">
+            <span className="spa-intro-subtitle">A Sanctuary of Refinement</span>
+            <h2 className="spa-intro-title">Cinqtuair at Royal Ritiz</h2>
+            <p className="spa-intro-desc">
+              Inspired by the five basic elements of nature—earth, water, air, fire, and space—
+              Cinqtuair Spa offers an immersive journey into tranquility.
+              Our sanctuary blends timeless architectural elegance with pioneering wellness innovations.
+            </p>
+          </div>
+        </div>
+
+        <div className="spa-list">
+          {services.map((service, index) => (
+            <SpaCard
+              key={index}
+              index={index}
+              subtitle={service.subtitle}
+              title={service.title}
+              description={service.description}
+              image={service.image}
+              linkText={service.linkText}
+            />
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 
 export default Spa;
+
+

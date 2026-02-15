@@ -1,0 +1,110 @@
+.restaurant-page-wrapper {
+  background-color: #fff;
+}
+
+.restaurant-page-content {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+/* Watermarks */
+.restaurant-page-content .watermark {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.restaurant-page-content .dining-text {
+  top: 5%;
+  left: -5%;
+  font-family: var(--font-heading);
+  font-size: 18rem;
+  color: #8D7256;
+  opacity: 0.1;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.restaurant-page-content .culinary-text {
+  bottom: 10%;
+  right: -5%;
+  font-family: var(--font-heading);
+  font-size: 18rem;
+  color: #8D7256;
+  opacity: 0.1;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.restaurant-page-content .palm-leaf {
+  width: 600px;
+  height: 600px;
+  background-image: url("/images/watermark%20palm-leaf.avif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+}
+
+.restaurant-page-content .palm-leaf.top-right {
+  top: -100px;
+  right: -100px;
+  transform: rotate(90deg);
+}
+
+.restaurant-page-content .palm-leaf.bottom-left {
+  bottom: -100px;
+  left: -100px;
+}
+
+.restaurant-page-content .logo-mark {
+  width: 300px;
+  height: 300px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='50' font-family='Playfair Display' font-size='40' fill='%238D7256'%3ERR%3C/text%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+}
+
+.restaurant-page-content .logo-mark.center-right {
+  top: 40%;
+  right: 2%;
+}
+
+.restaurant-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.restaurant-intro-subtitle {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.4rem;
+  color: var(--accent-gold);
+  margin-bottom: 15px;
+  display: block;
+}
+
+.restaurant-intro-title {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.restaurant-intro-desc {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* List Wrapper */
+.restaurants-list {
+  position: relative;
+  z-index: 2;
+}
