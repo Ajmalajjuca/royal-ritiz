@@ -2,10 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import HeroSection from "../components/Rooms/HeroSection";
 import "./Rooms.css";
-import room1 from "../optimized-assets/rooms1.webp";
-import room2 from "../optimized-assets/room1.webp";
-import room3 from "../optimized-assets/rooms2.webp";
-import heroImage from "../optimized-assets/rooms1.webp";
+import suite1 from "../optimized-new-assets/Suite_1.webp";
+import suite2 from "../optimized-new-assets/Suite_7.webp";
+import suite3 from "../optimized-new-assets/Suite_8.webp";
+import deluxe1 from "../optimized-new-assets/Sup_2.webp";
+import deluxe2 from "../optimized-new-assets/Sup_5.webp";
+import deluxe3 from "../optimized-new-assets/SUP_1.webp";
+import heroImage from "../optimized-new-assets/Suite_11.webp";
 
 const Rooms = () => {
   const suitesSliderRef = React.useRef(null);
@@ -16,21 +19,21 @@ const Rooms = () => {
       category: "Suite",
       title: "EXECUTIVE SUITE",
       description: "Our pinnacle offering in Lutyens Hubli for the crème de la crème is this exquisite suite. An opulent living area precedes a luxurious bedroom adorned with handpicked artwork. Every detail reflects timeless elegance and thoughtful design, and all of which ensure your stay with us is paramount.",
-      image: room1,
+      image: suite1,
       link: "/rooms/executive-suite"
     },
     {
       category: "Suite",
       title: "LUXURY SUITE",
       description: "A suite exuding old-school charm and luxury, nestled in the renowned Lutyens Hubli, synonymous with colonial elegance. This suite boasts aesthetically pleasing interiors and a large window offers calming views of the serene surroundings. Enhanced by an array of amenities and a spacious walk-in closet, they prepare you elegantly for the day ahead.",
-      image: room2,
+      image: suite2,
       link: "/rooms/luxury-suite"
     },
     {
       category: "Suite",
       title: "LUXURY SUITE WITH WHIRLPOOL",
       description: "Exuding a classic and time-honoured ambience, this sprawling world-suite aims to elevate relaxation to its utmost pinnacle. With plush beds and high-speed wireless Internet, cable satellite and a private indulgent whirlpool, ensuring an unparalleled stay, presented within a colonial-inspired suite.",
-      image: room3,
+      image: suite3,
       link: "/rooms/luxury-suite-whirlpool"
     },
   ];
@@ -40,21 +43,21 @@ const Rooms = () => {
       category: "Deluxe",
       title: "DELUXE KING BED ROOM - POOL VIEW",
       description: "This room radiates colonial charm and elegance with ornamental side lamps and unique artwork that chronicles Hubli's rich history. Complemented by a sumptuous soft bed, luxurious amenities, and breathtaking views of a pristine pool, we provide a modern yet culturally enriched heritage stay option.",
-      image: room1,
+      image: deluxe1,
       link: "/rooms/deluxe-pool-view"
     },
     {
       category: "Luxury",
       title: "LUXURY KING BED ROOM",
       description: "An elegant room aglow with sensor-activated lighting upon entry, designed to highlight its exceptional features: a sumptuous 400-thread count mattress, graceful rosewood furnishings, and expansive windows inviting the sun's gentle embrace.",
-      image: room2,
+      image: deluxe2,
       link: "/rooms/luxury-king"
     },
     {
       category: "Luxury",
       title: "LUXURY TWIN BED ROOM WITH BALCONY",
       description: "Ideal for a guest to share a coffee while overlooking the stunning greenery or the pristine pool, our balcony room is your quintessential vintage-style retreat. Featuring modern amenities within timeless colonial décor, this room ensures your stay is both sophisticated and memorable.",
-      image: room3,
+      image: deluxe3,
       link: "/rooms/luxury-twin-balcony"
     }
   ];

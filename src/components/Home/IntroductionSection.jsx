@@ -1,6 +1,6 @@
 import React from "react";
 import "./IntroductionSection.css";
-import heritageImg from '../../optimized-assets/Untitled_HDR-2 copy.webp';
+import heritageImg from '../../optimized-new-assets/Royal_Ritz-119.webp';
 
 const IntroductionSection = () => {
   return (

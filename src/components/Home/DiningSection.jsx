@@ -1,7 +1,7 @@
 import React from "react";
 import "./DiningSection.css";
-import restaurant from '../../optimized-assets/hotel.webp';
-import banquet from '../../optimized-assets/banquet.webp';
+import restaurant from '../../optimized-new-assets/Royal_Ritz-150_CAFE.webp';
+import deck from '../../optimized-new-assets/Royal_Ritz-152_CAFE.webp'; // Replacing banquet with deck
 import { Link } from "react-router-dom";
 
 const diningOptions = [
@@ -16,7 +16,7 @@ const diningOptions = [
     title: "Sky Deck",
     subtitle: "Rooftop Bar & Lounge",
     description: "Experience breathtaking city views while enjoying signature cocktails and gourmet tapas.",
-    image: banquet,
+    image: deck,
     link: "/restaurant"
   },
   {

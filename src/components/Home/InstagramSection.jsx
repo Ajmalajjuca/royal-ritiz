@@ -1,9 +1,9 @@
 import React from 'react';
 import './InstagramSection.css';
-import insta1 from '../../optimized-assets/hotel.webp';
-import insta2 from '../../optimized-assets/hero.webp';
-import insta3 from '../../optimized-assets/banquet.webp';
-import insta4 from '../../optimized-assets/HDR3.webp';
+import insta1 from '../../optimized-new-assets/Royal_Ritz-233.webp';
+import insta2 from '../../optimized-new-assets/DJI_0164.webp';
+import insta3 from '../../optimized-new-assets/Royal_Ritz-199.webp';
+import insta4 from '../../optimized-new-assets/Royal_Ritz-197.webp';
 
 const InstagramSection = () => {
   const instaImages = [insta1, insta2, insta3, insta4];

@@ -1,6 +1,6 @@
 import React from 'react';
 import './WelcomeSection.css';
-import hotelExterier from '../../optimized-assets/hotel.webp';
+import hotelExterier from '../../optimized-new-assets/DSC01329.webp';
 
 const WelcomeSection = () => {
     return (

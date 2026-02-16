@@ -6,7 +6,7 @@ import MapSection from "../components/About/MapSection";
 import ScrollingLogos from "@/components/About/ScrollingLogos";
 
 // Images
-import hotel from '../optimized-assets/Untitled_HDR-2 copy.webp';
+import hotel from '../optimized-new-assets/Royal_Ritz-101.webp';
 
 const About = () => {
   return (
