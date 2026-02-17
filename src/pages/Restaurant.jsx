@@ -4,11 +4,11 @@ import RestaurantCard from "../components/Restaurants/RestaurantCard";
 import "./Restaurant.css";
 
 // Images
-import pickwicksImg from "../optimized-new-assets/Royal_Ritz-150_CAFE.webp";
-import sevillaImg from "../optimized-new-assets/Royal_Ritz-152_CAFE.webp";
-import jadeImg from "../optimized-new-assets/Royal_Ritz-155_CAFE.webp";
-import dhabaImg from "../optimized-new-assets/Royal_Ritz-159_CAFE.webp";
-import atriumImg from "../optimized-new-assets/Royal_Ritz-151_CAFE.webp";
+const pickwicksImg = "/optimized-new-assets/Royal_Ritz-150_CAFE.webp";
+const sevillaImg = "/optimized-new-assets/Royal_Ritz-152_CAFE.webp";
+const jadeImg = "/optimized-new-assets/Royal_Ritz-155_CAFE.webp";
+const dhabaImg = "/optimized-new-assets/Royal_Ritz-159_CAFE.webp";
+const atriumImg = "/optimized-new-assets/Royal_Ritz-151_CAFE.webp";
 
 const Restaurant = () => {
   const restaurants = [

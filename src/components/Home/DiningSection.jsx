@@ -1,7 +1,7 @@
 import React from "react";
 import "./DiningSection.css";
-import restaurant from '../../optimized-new-assets/Royal_Ritz-150_CAFE.webp';
-import deck from '../../optimized-new-assets/Royal_Ritz-152_CAFE.webp'; // Replacing banquet with deck
+const restaurant = '/optimized-new-assets/Royal_Ritz-150_CAFE.webp';
+const deck = '/optimized-new-assets/Royal_Ritz-152_CAFE.webp';
 import { Link } from "react-router-dom";
 
 const diningOptions = [

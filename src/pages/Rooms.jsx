@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import HeroSection from "../components/Rooms/HeroSection";
 import "./Rooms.css";
-import suite1 from "../optimized-new-assets/Suite_1.webp";
-import suite2 from "../optimized-new-assets/Suite_7.webp";
-import suite3 from "../optimized-new-assets/Suite_8.webp";
-import deluxe1 from "../optimized-new-assets/Sup_2.webp";
-import deluxe2 from "../optimized-new-assets/Sup_5.webp";
-import deluxe3 from "../optimized-new-assets/SUP_1.webp";
-import heroImage from "../optimized-new-assets/Suite_11.webp";
+const suite1 = "/optimized-new-assets/Suite_1.webp";
+const suite2 = "/optimized-new-assets/Suite_7.webp";
+const suite3 = "/optimized-new-assets/Suite_8.webp";
+const deluxe1 = "/optimized-new-assets/Sup_2.webp";
+const deluxe2 = "/optimized-new-assets/Sup_5.webp";
+const deluxe3 = "/optimized-new-assets/SUP_1.webp";
+const heroImage = "/optimized-new-assets/Suite_11.webp";
 
 const Rooms = () => {
   const suitesSliderRef = React.useRef(null);

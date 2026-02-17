@@ -4,11 +4,11 @@ import BanquetCard from "../components/Banquet/BanquetCard";
 import "./Banquet.css";
 
 // Images
-import banquetHero from '../optimized-new-assets/BQT_Royal_Ritz-121.webp';
-import viceroyImg from '../optimized-new-assets/BQT_Royal_Ritz-126.webp';
-import senateImg from '../optimized-new-assets/Royal_Ritz-133_BQT.webp';
-import gardenImg from '../optimized-new-assets/Royal_Ritz-105.webp';
-import boardRoomImg from '../optimized-new-assets/Royal_Ritz-125_BQT.webp';
+const banquetHero = '/optimized-new-assets/BQT_Royal_Ritz-121.webp';
+const viceroyImg = '/optimized-new-assets/BQT_Royal_Ritz-126.webp';
+const senateImg = '/optimized-new-assets/Royal_Ritz-133_BQT.webp';
+const gardenImg = '/optimized-new-assets/Royal_Ritz-105.webp';
+const boardRoomImg = '/optimized-new-assets/Royal_Ritz-125_BQT.webp';
 
 const Banquet = () => {
   const venues = [

@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import './DiningSlider.css';
-import sevilla from '../../optimized-new-assets/Royal_Ritz-152_CAFE.webp';
-import lutyens from '../../optimized-new-assets/Royal_Ritz-150_CAFE.webp';
-import bakery from '../../optimized-new-assets/Royal_Ritz-151_CAFE.webp';
+const sevilla = '/optimized-new-assets/Royal_Ritz-81.webp';
+const lutyens = '/optimized-new-assets/Royal_Ritz-101.webp';
+const bakery = '/optimized-new-assets/Royal Ritz-159 CAFE.webp';
 
 const diningData = [
     {

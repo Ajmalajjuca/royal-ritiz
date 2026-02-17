@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
 import BookingBar from "./BookingBar";
 
-import hero1 from '../../optimized-new-assets/DJI_0163.webp'
-import hero2 from '../../optimized-new-assets/Royal_Ritz-101.webp';
-import hero3 from '../../optimized-new-assets/DSC01348.webp';
+const hero1 = '/optimized-new-assets/DJI_0163.webp';
+const hero2 = '/optimized-new-assets/Royal_Ritz-101.webp';
+const hero3 = '/optimized-new-assets/DSC01348.webp';
 
 const images = [hero1, hero2, hero3];
 

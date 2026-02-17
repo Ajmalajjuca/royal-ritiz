@@ -4,11 +4,11 @@ import SpaCard from "../components/Spa/SpaCard";
 import "./Spa.css";
 
 // Images
-import spaHero from '../optimized-new-assets/Royal_Ritz-10.webp';
-import therapyImg from '../optimized-new-assets/Royal_Ritz-10.webp';
-import poolImg from '../optimized-new-assets/DJI_0103.webp';
-import massageImg from '../optimized-new-assets/Royal_Ritz-114.webp';
-import yogaImg from '../optimized-new-assets/Royal_Ritz-108.webp';
+const spaHero = '/optimized-new-assets/Royal_Ritz-10.webp';
+const therapyImg = '/optimized-new-assets/Royal_Ritz-10.webp';
+const poolImg = '/optimized-new-assets/DJI_0103.webp';
+const massageImg = '/optimized-new-assets/Royal_Ritz-114.webp';
+const yogaImg = '/optimized-new-assets/Royal_Ritz-108.webp';
 
 const Spa = () => {
   const services = [

@@ -1,9 +1,9 @@
 import React from "react";
 import "./RoomsSection.css";
 import { Link } from "react-router-dom";
-import room1 from '../../optimized-new-assets/Sup_3.webp';
-import room2 from '../../optimized-new-assets/Suite_1.webp';
-import room3 from '../../optimized-new-assets/Royal_Ritz-163_Cottage.webp';
+const room1 = '/optimized-new-assets/Sup_3.webp';
+const room2 = '/optimized-new-assets/Suite_1.webp';
+const room3 = '/optimized-new-assets/Royal_Ritz-163_Cottage.webp';
 
 const rooms = [
   {

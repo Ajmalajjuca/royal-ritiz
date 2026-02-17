@@ -1,7 +1,7 @@
 import React from 'react';
 import './EventsSection.css';
-import eventImg1 from '../../optimized-new-assets/BQT_Royal_Ritz-121.webp';
-import eventImg2 from '../../optimized-new-assets/Royal_Ritz-125_BQT.webp';
+const eventImg1 = '/optimized-new-assets/BQT_Royal_Ritz-121.webp';
+const eventImg2 = '/optimized-new-assets/Royal_Ritz-125_BQT.webp';
 
 const EventsSection = () => {
     return (
