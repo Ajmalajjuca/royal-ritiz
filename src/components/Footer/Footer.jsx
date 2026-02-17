@@ -100,9 +100,9 @@ const Footer = () => {
       </div>
 
       {showScrollTop && (
-        <button className="scroll-to-top" onClick={scrollToTop} aria-label="Scroll to top">
+        {/* <button className="scroll-to-top" onClick={scrollToTop} aria-label="Scroll to top">
           <span className="scroll-arrow">↑</span>
-        </button>
+        </button> */}
       )}
     </footer>
   );

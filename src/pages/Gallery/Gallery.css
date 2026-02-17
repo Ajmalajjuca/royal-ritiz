@@ -1,0 +1,211 @@
+.gallery-page {
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.gallery-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  background-image: url('/src/optimized-new-assets/DJI_0090.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Increased from 0.4 */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: #fff;
+  padding-top: 60px; /* Add space for navbar */
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: 5rem;
+  letter-spacing: 12px;
+  font-weight: 300;
+  margin-bottom: 30px; /* Increased margin */
+}
+
+.breadcrumbs {
+  font-family: var(--font-nav);
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  opacity: 0.9;
+  margin-top: 10px; /* Ensure space below title */
+}
+
+.breadcrumbs span {
+  margin: 0 10px;
+}
+
+/* Page Content */
+.gallery-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 20px 100px;
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.refined-gallery-title {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  color: #1a1a1a;
+  font-weight: 300;
+  font-style: italic; /* Match reference serif style */
+}
+
+/* Filters */
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.filter-btn {
+  background: none;
+  border: none;
+  font-family: var(--font-nav);
+  font-size: 0.75rem;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 5px 0;
+}
+
+.filter-btn:hover {
+  color: #000;
+}
+
+.filter-btn.active {
+  color: #bfa37c; /* Claridges Gold */
+  font-weight: 600;
+  border-bottom: 2px solid #bfa37c;
+  padding-bottom: 2px;
+}
+
+/* Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 30px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  background: #f9f9f9;
+}
+
+.gallery-image-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /* Align text to bottom like premium magazines */
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.image-category {
+  font-family: var(--font-nav);
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.image-title {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 4rem;
+    letter-spacing: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-hero {
+    height: 40vh;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+  }
+  .refined-gallery-title {
+    font-size: 2rem;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .gallery-filters {
+    gap: 15px;
+    padding: 10px;
+  }
+  .filter-btn {
+    font-size: 0.7rem;
+  }
+}
+

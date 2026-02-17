@@ -9,6 +9,7 @@ import Restaurant from "./pages/Restaurant";
 import Banquet from "./pages/Banquet";
 import Spa from "./pages/Spa";
 import About from "./pages/About";
+import Gallery from "./pages/Gallery/Gallery";
 
 import RoomDetail from "./pages/RoomDetail";
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="/banquet" element={<Banquet />} />
             <Route path="/spa" element={<Spa />} />
             <Route path="/about" element={<About />} />
+            <Route path="/gallery" element={<Gallery />} />
 
             {/* Dynamic Room Details */}
             <Route path="/rooms/:roomId" element={<RoomDetail />} />

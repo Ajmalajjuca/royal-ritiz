@@ -18,14 +18,14 @@ const Rooms = () => {
     {
       category: "Suite",
       title: "EXECUTIVE SUITE",
-      description: "Our pinnacle offering in Lutyens Hubli for the crème de la crème is this exquisite suite. An opulent living area precedes a luxurious bedroom adorned with handpicked artwork. Every detail reflects timeless elegance and thoughtful design, and all of which ensure your stay with us is paramount.",
+      description: "Our pinnacle offering in Hubli for the crème de la crème is this exquisite suite. An opulent living area precedes a luxurious bedroom adorned with handpicked artwork. Every detail reflects timeless elegance and thoughtful design, and all of which ensure your stay with us is paramount.",
       image: suite1,
       link: "/rooms/executive-suite"
     },
     {
       category: "Suite",
       title: "LUXURY SUITE",
-      description: "A suite exuding old-school charm and luxury, nestled in the renowned Lutyens Hubli, synonymous with colonial elegance. This suite boasts aesthetically pleasing interiors and a large window offers calming views of the serene surroundings. Enhanced by an array of amenities and a spacious walk-in closet, they prepare you elegantly for the day ahead.",
+      description: "A suite exuding old-school charm and luxury, nestled in the renowned Hubli, synonymous with colonial elegance. This suite boasts aesthetically pleasing interiors and a large window offers calming views of the serene surroundings. Enhanced by an array of amenities and a spacious walk-in closet, they prepare you elegantly for the day ahead.",
       image: suite2,
       link: "/rooms/luxury-suite"
     },
@@ -89,7 +89,7 @@ const Rooms = () => {
           <div className="rooms-intro-section">
             <h2 className="rooms-intro-title">
               Enjoy High-end Hospitality <br />
-              With Our Rooms in Ne
+              With Our Rooms in Hubli
             </h2>
           </div>
         </div>

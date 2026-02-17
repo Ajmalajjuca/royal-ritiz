@@ -21,8 +21,8 @@
 .inner-hero-overlay {
   position: absolute;
   inset: 0;
-  /* Premium bottom-weighted gradient for legibility */
-  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.7) 100%);
+  /* Premium bottom-weighted gradient for legibility - increased top opacity */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0.8) 100%);
   z-index: 1;
 }
 

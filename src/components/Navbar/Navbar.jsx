@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaBed, FaUtensils, FaCompass, FaUsers, FaImages, FaHotel, FaChevronLeft, FaInfoCircle } from "react-icons/fa";
+import { GiLotus, GiMeal } from "react-icons/gi";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -8,11 +9,12 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { path: "/rooms", label: "ROOMS & SUITES" },
-    { path: "/restaurant", label: "DINING" },
-    { path: "/spa", label: "WELLNESS" },
-    { path: "/banquet", label: "EVENTS" },
-    { path: "/about", label: "ABOUT US" },
+    { path: "/rooms", label: "ROOMS", icon: "bed" },
+    { path: "/restaurant", label: "DINING", icon: "dining" },
+    { path: "/spa", label: "WELLNESS", icon: "lotus" },
+    { path: "/banquet", label: "EXPERIENCES", icon: "compass" },
+    { path: "/gallery", label: "GALLERY", icon: "gallery" },
+    { path: "/about", label: "ABOUT", icon: "info" },
   ];
 
   useEffect(() => {
@@ -28,16 +30,17 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${scrolled ? "scrolled" : ""} ${mobileMenuOpen ? "mobile-menu-open" : ""}`}>
+    <nav className={`navbar ${scrolled ? "scrolled" : ""} ${mobileMenuOpen ? "mobile-menu-open" : ""} `}>
       <div className="navbar-container">
-        {/* Left: Logo */}
+        {/* Left Section: Logo */}
         <div className="navbar-logo-container">
           <Link to="/" className="navbar-logo">
-            ROYAL Ritz
+            {/* <img src="/assets/logo.png" alt="Royal Ritz Logo" className="navbar-logo-img"></img> */}
+            ROYAL RITZ
           </Link>
         </div>
 
-        {/* Center/Right: Desktop Links */}
+        {/* Center Section: Desktop Links */}
         <div className="navbar-links-container">
           <ul className="navbar-links">
             {navLinks.map((link) => (
@@ -55,21 +58,31 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Far Right: Book Now & Mobile Toggle */}
+        {/* Right Section: Actions & Icons */}
         <div className="navbar-actions">
-          <button className="book-btn">BOOK A STAY</button>
 
-          <div className="mobile-toggle" onClick={toggleMobileMenu}>
-            {mobileMenuOpen ? <FaTimes /> : <FaBars />}
+          <button className="book-btn">BOOK NOW</button>
+
+          <div className="navbar-menu-toggle" onClick={toggleMobileMenu}>
+            <div className={`hamburger-icon ${mobileMenuOpen ? "open" : ""}`}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Mobile Menu Overlay */}
       <div className={`mobile-menu ${mobileMenuOpen ? "open" : ""}`}>
+        <div className="mobile-menu-header">
+          <div className="close-btn" onClick={() => setMobileMenuOpen(false)}>
+            <FaTimes />
+          </div>
+        </div>
         <ul className="mobile-links">
-          {navLinks.map((link) => (
-            <li key={link.path}>
+          {navLinks.map((link, index) => (
+            <li key={index}>
               <NavLink
                 to={link.path}
                 className={({ isActive }) =>
@@ -77,7 +90,17 @@ const Navbar = () => {
                 }
                 onClick={() => setMobileMenuOpen(false)}
               >
-                {link.label}
+                <span className="link-label">{link.label}</span>
+                {link.icon && (
+                  <span className="link-icon">
+                    {link.icon === "bed" && <FaBed size={20} />}
+                    {link.icon === "dining" && <GiMeal size={20} />}
+                    {link.icon === "lotus" && <GiLotus size={20} />}
+                    {link.icon === "compass" && <FaCompass size={20} />}
+                    {link.icon === "gallery" && <FaImages size={20} />}
+                    {link.icon === "info" && <FaInfoCircle size={20} />}
+                  </span>
+                )}
               </NavLink>
             </li>
           ))}
