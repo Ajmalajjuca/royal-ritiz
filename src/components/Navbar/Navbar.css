@@ -51,9 +51,14 @@
 }
 
 .navbar-logo-img {
-  height: 48px; /* Refined height for better visibility */
+  height: 60px; /* Increased height for better visibility */
   width: auto;
   object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled .navbar-logo-img {
+  height: 50px; /* Slightly smaller when scrolled */
 }
 
 .navbar.scrolled .navbar-logo {

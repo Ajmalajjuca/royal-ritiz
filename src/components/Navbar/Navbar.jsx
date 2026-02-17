@@ -35,8 +35,7 @@ const Navbar = () => {
         {/* Left Section: Logo */}
         <div className="navbar-logo-container">
           <Link to="/" className="navbar-logo">
-            {/* <img src="/assets/logo.png" alt="Royal Ritz Logo" className="navbar-logo-img"></img> */}
-            ROYAL RITZ
+            <img src="/logo.png" alt="Royal Ritz Logo" className="navbar-logo-img" />
           </Link>
         </div>
 
