@@ -29,7 +29,7 @@ const Footer = () => {
         {/* Brand Column */}
         <div className="footer-col brand-col">
           <div className="footer-brand">
-            <h2 className="footer-logo">ROYAL Ritz</h2>
+            <h2 className="footer-logo">ROYAL RITZ</h2>
             <span className="footer-location">HUBALI</span>
           </div>
         </div>
