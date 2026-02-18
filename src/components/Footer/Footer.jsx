@@ -79,11 +79,11 @@ const Footer = () => {
         <div className="footer-col social-col">
           <h4 className="footer-heading">Our Online Presence</h4>
           <div className="social-presence-icons">
-            <a href="#" className="presence-social-icon"><FaWhatsapp /></a>
-            <a href="#" className="presence-social-icon"><FaFacebookF /></a>
-            <a href="#" className="presence-social-icon"><FaGoogle /></a>
-            <a href="#" className="presence-social-icon"><FaLinkedinIn /></a>
-            <a href="https://www.instagram.com/royalritishubli/" target="_blank" rel="noreferrer" className="presence-social-icon"><FaInstagram /></a>
+            <a href="https://www.instagram.com/royalritzofficial" className="presence-social-icon"><FaWhatsapp /></a>
+            <a href="https://www.instagram.com/royalritzofficial" className="presence-social-icon"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/royalritzofficial" className="presence-social-icon"><FaGoogle /></a>
+            <a href="https://www.instagram.com/royalritzofficial" className="presence-social-icon"><FaLinkedinIn /></a>
+            <a href="https://www.instagram.com/royalritzofficial" target="_blank" rel="noreferrer" className="presence-social-icon"><FaInstagram /></a>
           </div>
         </div>
 
