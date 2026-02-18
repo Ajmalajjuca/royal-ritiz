@@ -32,7 +32,7 @@ const RoomDetail = () => {
 
     return (
         <div className="room-detail-wrapper">
-            <HeroSection title={room.name} image={room.images[0]} />
+            <HeroSection title={room.name} image={room.images[1]} />
 
             <div className="room-details-container">
                 {/* Background Watermarks */}

@@ -4,18 +4,17 @@ import RestaurantCard from "../components/Restaurants/RestaurantCard";
 import "./Restaurant.css";
 
 // Images
-const pickwicksImg = "/optimized-new-assets/Royal_Ritz-150_CAFE.webp";
+const pickwicksImg = "/optimized-new-assets/Royal Ritz-100.webp";
 const sevillaImg = "/optimized-new-assets/Royal_Ritz-152_CAFE.webp";
 const jadeImg = "/optimized-new-assets/Royal_Ritz-155_CAFE.webp";
-const dhabaImg = "/optimized-new-assets/Royal_Ritz-159_CAFE.webp";
-const atriumImg = "/optimized-new-assets/Royal_Ritz-151_CAFE.webp";
+const dhabaImg = "/optimized-new-assets/Royal Ritz-101.webp";
 
 const Restaurant = () => {
   const restaurants = [
     {
-      title: "Pickwicks",
-      subtitle: "CUISINE WITHOUT BORDERS",
-      description: "Inspired by Charles Dickens' 'The Pickwick Papers', our all-day dining destination offers a quaint English colonial charm. Savor a versatile selection ranging from British classics to authentic Japanese and European cuisines.",
+      title: "Tangerine",
+      subtitle: "ALL-DAY DINING",
+      description: "A vibrant all-day dining destination where global flavors meet warm hospitality. Tangerine offers an eclectic menu inspired by world cuisines, served in a bright and welcoming atmosphere perfect for every occasion.",
       image: pickwicksImg,
       details: [
         { label: "Cuisine", value: "Global Fusion" },
@@ -24,47 +23,36 @@ const Restaurant = () => {
       ]
     },
     {
-      title: "Sevilla",
-      subtitle: "MEDITERRANEAN ROMANCE",
-      description: "Step into our Spanish sanctuary, an award-winning destination set amidst lush gardens. With open-air canopies and the smoky aromas of our Josper oven, Sevilla brings the soul of the Mediterranean to the heart of Hubli.",
+      title: "Pool Side",
+      subtitle: "OPEN-AIR DINING",
+      description: "Unwind by the shimmering poolside with refreshing bites and chilled beverages. Our open-air dining experience combines a relaxed ambiance with a curated menu of light meals, grills, and tropical cocktails.",
       image: sevillaImg,
       details: [
-        { label: "Cuisine", value: "Spanish & Mediterranean" },
-        { label: "Setting", value: "Garden Dining" },
-        { label: "Atmosphere", value: "Romantic" }
+        { label: "Cuisine", value: "Continental & Grills" },
+        { label: "Setting", value: "Outdoor Pool Deck" },
+        { label: "Atmosphere", value: "Relaxed & Breezy" }
       ]
     },
     {
-      title: "Jade",
-      subtitle: "CANTONESE REFINEMENT",
-      description: "Discover a vibrant journey into authentic Cantonese cuisine. Adorned with malachite pillars and brass accents, Jade expertly balances traditional recipes with modern presentations, featuring our signature Dim Sums and Peking Duck.",
+      title: "Bunkerz",
+      subtitle: "LOUNGE & NIGHTLIFE",
+      description: "Descend into Bunkerz — our underground lounge where the night comes alive. With pulsating music, craft cocktails, and an electric atmosphere, Bunkerz is the ultimate destination for those who seek an unforgettable evening.",
       image: jadeImg,
       details: [
-        { label: "Cuisine", value: "Authentic Cantonese" },
-        { label: "Specialty", value: "Peking Duck" },
-        { label: "Hours", value: "12:30 PM - 11:00 PM" }
+        { label: "Type", value: "Lounge & Bar" },
+        { label: "Specialty", value: "Craft Cocktails" },
+        { label: "Hours", value: "6:00 PM - 2:00 AM" }
       ]
     },
     {
-      title: "Dhaba",
-      subtitle: "RUSTIC PUNJABI SOUL",
-      description: "A nostalgic journey to a traditional North Indian village. With its iconic truck decor and thatched roof, Dhaba celebrates robust Punjabi flavors and 80s-inspired kitsch in a lively, spirited atmosphere.",
+      title: "Pool Bar",
+      subtitle: "SIPS BY THE WATER",
+      description: "The perfect spot to cool down and sip in style. Pool Bar offers an extensive selection of handcrafted cocktails, mocktails, and premium spirits, all enjoyed with your feet near the water and the sun on your face.",
       image: dhabaImg,
       details: [
-        { label: "Cuisine", value: "North Indian / Punjabi" },
-        { label: "Experience", value: "Themed Dining" },
-        { label: "Must Try", value: "Balti Meat" }
-      ]
-    },
-    {
-      title: "The Atrium",
-      subtitle: "ELEGANT HIGH TEA",
-      description: "A serene, sunlit sanctuary perfect for afternoon rituals. Enjoy a curated selection of premium teas, artisan coffees, and exquisite pastries in a refined turquoise and white setting.",
-      image: atriumImg,
-      details: [
-        { label: "Specialty", value: "High Tea & Pastries" },
-        { label: "Hours", value: "10:00 AM - 8:00 PM" },
-        { label: "Dress Code", value: "Casual Elegance" }
+        { label: "Type", value: "Poolside Bar" },
+        { label: "Specialty", value: "Cocktails & Mocktails" },
+        { label: "Hours", value: "10:00 AM - 10:00 PM" }
       ]
     }
   ];

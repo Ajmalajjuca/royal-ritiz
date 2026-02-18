@@ -355,3 +355,67 @@
 }
 
 
+/* Room Categories Grid */
+.rooms-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.room-category-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.room-category-img-wrap {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.room-category-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.room-category-card:hover .room-category-img {
+  transform: scale(1.05);
+}
+
+.room-category-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.room-category-count {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: #888;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+  .rooms-categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .room-category-img-wrap { height: 240px; }
+}
+
+@media (max-width: 576px) {
+  .rooms-categories-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .room-category-img-wrap { height: 180px; }
+}

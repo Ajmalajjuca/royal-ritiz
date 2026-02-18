@@ -218,5 +218,125 @@ export const roomsData = {
       "Mini Bar",
       "Work Desk"
     ]
+  },
+
+  // ── New top-level room type pages ──────────────────────────────────────────
+  "premium": {
+    name: "Premium Rooms",
+    category: "Premium",
+    images: [
+      "/optimized-new-assets/Royal Ritz-231.webp",
+      "/optimized-new-assets/Royal Ritz-219.webp",
+      "/optimized-new-assets/Royal Ritz-220.webp",
+      "/optimized-new-assets/Royal Ritz-229.webp"
+    ],
+    description: "Experience refined comfort in our Premium rooms, thoughtfully designed with warm tones, plush bedding, and modern amenities. Ideal for the discerning traveller seeking a perfect balance of style and value in the heart of the city.",
+    size: "35 m² / 377 ft²",
+    guests: "Up to 2 Guests",
+    view: "City View",
+    highlights: [
+      "Plush Premium Bedding",
+      "Warm Contemporary Interiors",
+      "Modern In-room Amenities",
+      "City & Garden Views"
+    ],
+    amenities: [
+      "Complimentary Wi-Fi",
+      "Smart TV with Streaming",
+      "Mini Bar & Coffee Maker",
+      "Luxury Bathroom Amenities",
+      "24-Hour Room Service",
+      "King-size Bed with Premium Linens",
+      "Work Desk & Lounge Area"
+    ]
+  },
+
+  "superior": {
+    name: "Superior Rooms",
+    category: "Superior",
+    images: [sup1, sup2, sup3, sup4, sup5, sup6, sup7, sup8],
+    description: "Step into our Superior rooms, where colonial-era charm meets modern luxury. Featuring sensor-activated lighting, a sumptuous 400-thread count mattress, rosewood furnishings, and expansive windows that invite the sun's gentle embrace.",
+    size: "40 m² / 430 ft²",
+    guests: "Up to 2 Guests",
+    view: "City & Pool View",
+    highlights: [
+      "Intuitive Smart Lighting",
+      "Authentic Rosewood Décor",
+      "400 Thread Count Comfort",
+      "Panoramic City & Pool Vistas"
+    ],
+    amenities: [
+      "Sensor-activated Lighting",
+      "400-thread count mattress",
+      "Rosewood Furnishings",
+      "Complimentary Wi-Fi",
+      "Coffee Maker",
+      "Smart TV",
+      "Mini Bar",
+      "24-Hour Room Service"
+    ]
+  },
+
+  "suite": {
+    name: "Suites",
+    category: "Suite",
+    images: [suite1, suite7, suite8, suite3, suite4, suite6, suite9, suite10, suite11, suite12],
+    description: "Our pinnacle offering for the crème de la crème. An opulent living area precedes a luxurious bedroom adorned with handpicked artwork. Every detail reflects timeless elegance and thoughtful design, ensuring your stay is paramount.",
+    size: "65–85 m² / 700–915 ft²",
+    guests: "Up to 3 Guests",
+    view: "Garden & Pool View",
+    highlights: [
+      "Separate Living & Dining Areas",
+      "Signature Hubli Views",
+      "Handpicked Art Collection",
+      "Private Butler Pantry"
+    ],
+    amenities: [
+      "Complimentary Wi-Fi",
+      "Smart TV with Streaming",
+      "Mini Bar & Coffee Maker",
+      "Premium Whirlpool (select suites)",
+      "Executive Lounge Access",
+      "24-Hour Butler Service",
+      "King-size Bed with 600 Thread Count"
+    ]
+  },
+
+  "cottage": {
+    name: "Cottages",
+    category: "Cottage",
+    images: [
+      "/optimized-new-assets/Royal Ritz-164 Cottage.webp",
+      "/optimized-new-assets/Royal Ritz-64.webp",
+      "/optimized-new-assets/Royal Ritz-169 Cottage.webp",
+      "/optimized-new-assets/Royal Ritz-174 Cottage.webp",
+      "/optimized-new-assets/Royal Ritz-177 Cottage.webp",
+      "/optimized-new-assets/Royal Ritz-180 Cottage.webp",
+      "/optimized-new-assets/Royal Ritz-181 Cottage.webp",
+      "/optimized-new-assets/Royal Ritz-185 Cottage.webp",
+      "/optimized-new-assets/Royal Ritz-191 Cottage.webp",
+      "/optimized-new-assets/Royal Ritz-194 Cottage.webp",
+      "/optimized-new-assets/Royal Ritz-200.webp"
+    ],
+    description: "Nestled amidst lush greenery, our Cottages offer an intimate and secluded escape. With private sit-out areas, serene garden views, and bespoke butler service, they are the perfect retreat for a truly private getaway.",
+    size: "45 m² / 484 ft²",
+    guests: "Up to 2 Guests",
+    view: "Garden & Pool View",
+    highlights: [
+      "Private Sit-out & Terrace",
+      "Lush Garden Surroundings",
+      "Bespoke Butler Service",
+      "Secluded & Intimate Setting"
+    ],
+    amenities: [
+      "Private Pool Access",
+      "Complimentary Wi-Fi",
+      "Mini Bar & Coffee Maker",
+      "Garden & Pool View",
+      "Luxury Bedding",
+      "24-Hour Butler Service",
+      "Smart TV"
+    ]
   }
 };
+
