@@ -34,7 +34,7 @@ const EventsSection = () => {
                         <div className="event-card-content">
                             <h3 className="event-card-title">Event Venues</h3>
                             <p className="event-card-desc">
-                                The Viceroy Hall, adjacent to the lobby, offers a stunning pool view and can accommodate 300 people in various layouts across 316 sq. m. The Royal Ritz Garden, known for its legendary Sunday Brunch, is ideal for hosting small events, featuring delectable multi-cuisine meals and premium drinks.
+                                The Sugani Hall, adjacent to the lobby, offers a stunning pool view and can accommodate 300 people in various layouts across 316 sq. m. The Royal Ritz Garden, known for its legendary Sunday Brunch, is ideal for hosting small events, featuring delectable multi-cuisine meals and premium drinks.
                             </p>
                             <a href="/banquet" className="event-card-link">EXPLORE</a>
                         </div>

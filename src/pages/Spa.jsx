@@ -6,7 +6,7 @@ import "./Spa.css";
 // Images
 const spaHero = '/optimized-new-assets/Royal_Ritz-10.webp';
 const therapyImg = '/optimized-new-assets/Royal_Ritz-10.webp';
-const poolImg = '/optimized-new-assets/DJI_0103.webp';
+const poolImg = '/optimized-new-assets/Royal Ritz-63.webp';
 const massageImg = '/optimized-new-assets/Royal_Ritz-114.webp';
 const yogaImg = '/optimized-new-assets/Royal_Ritz-108.webp';
 

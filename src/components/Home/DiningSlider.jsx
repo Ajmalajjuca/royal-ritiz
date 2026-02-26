@@ -1,29 +1,37 @@
 import React, { useRef } from 'react';
 import './DiningSlider.css';
-const sevilla = '/optimized-new-assets/Royal_Ritz-81.webp';
-const lutyens = '/optimized-new-assets/Royal_Ritz-101.webp';
-const bakery = '/optimized-new-assets/Royal Ritz-159 CAFE.webp';
+const tangerine = "/optimized-new-assets/Royal Ritz-87.webp";
+const poolside = "/optimized-new-assets/Royal Ritz-79.webp";
+const bunkerz = "/optimized-new-assets/Royal_Ritz-155_CAFE.webp";
+const poolbar = "/optimized-new-assets/Royal Ritz-101.webp";
 
 const diningData = [
     {
-        image: sevilla,
-        title: "SEVILLA",
-        subtitle: "Spanish & Mediterranean Cuisine",
-        description: "Sevilla, our Spanish-themed restaurant, is renowned for its authentic Mediterranean cuisine, similar to the ambience found in Mediterranean cities.",
+        image: tangerine,
+        title: "Tangerine",
+        subtitle: "ALL-DAY DINING",
+        description: "A vibrant all-day dining destination where global flavors meet warm hospitality. Tangerine offers an eclectic menu inspired by world cuisines.",
         link: "/restaurant"
     },
     {
-        image: lutyens,
-        title: "LUTYENS DELI",
-        subtitle: "Multi-Cuisine Buffet",
-        description: "Established with a vision to provide a delightful dining experience, Lutyens Deli buffet spreads are a true culinary marvel focusing on serving exquisite spread cuisines from around the world.",
+        image: poolside,
+        title: "Pool Side",
+        subtitle: "OPEN-AIR DINING",
+        description: "Unwind by the shimmering poolside with refreshing bites and chilled beverages. Our open-air dining experience combines a relaxed ambiance.",
         link: "/restaurant"
     },
     {
-        image: bakery,
-        title: "YE OLD BAKERY",
-        subtitle: "Oldest Bakery In Town",
-        description: "Ye Old Bakery, one of the best bakeries in Hubli, has been a haven of sweet creations since 1983. As one of the oldest bakeries in the country, it offers guests a taste of history with its refined atmosphere and time-honoured recipes.",
+        image: bunkerz,
+        title: "Bunkerz",
+        subtitle: "LOUNGE & NIGHTLIFE",
+        description: "Descend into Bunkerz — our underground lounge where the night comes alive with pulsating music and craft cocktails.",
+        link: "/restaurant"
+    },
+    {
+        image: poolbar,
+        title: "Pool Bar",
+        subtitle: "SIPS BY THE WATER",
+        description: "The perfect spot to cool down and sip in style, enjoyed with your feet near the water and the sun on your face.",
         link: "/restaurant"
     }
 ];

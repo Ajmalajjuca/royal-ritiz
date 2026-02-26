@@ -4,8 +4,8 @@ import RestaurantCard from "../components/Restaurants/RestaurantCard";
 import "./Restaurant.css";
 
 // Images
-const pickwicksImg = "/optimized-new-assets/Royal Ritz-100.webp";
-const sevillaImg = "/optimized-new-assets/Royal_Ritz-152_CAFE.webp";
+const pickwicksImg = "/optimized-new-assets/Royal Ritz-87.webp";
+const sevillaImg = "/optimized-new-assets/Royal_Ritz-79.webp";
 const jadeImg = "/optimized-new-assets/Royal_Ritz-155_CAFE.webp";
 const dhabaImg = "/optimized-new-assets/Royal Ritz-101.webp";
 

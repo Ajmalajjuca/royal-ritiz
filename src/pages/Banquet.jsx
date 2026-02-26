@@ -5,7 +5,7 @@ import "./Banquet.css";
 
 // Images
 const banquetHero = '/optimized-new-assets/BQT_Royal_Ritz-121.webp';
-const viceroyImg = '/optimized-new-assets/BQT_Royal_Ritz-126.webp';
+const viceroyImg = '/optimized-new-assets/Royal Ritz-28.webp';
 const senateImg = '/optimized-new-assets/Royal_Ritz-133_BQT.webp';
 const gardenImg = '/optimized-new-assets/Royal_Ritz-105.webp';
 const boardRoomImg = '/optimized-new-assets/Royal_Ritz-125_BQT.webp';
@@ -14,8 +14,8 @@ const Banquet = () => {
   const venues = [
     {
       subtitle: "ESTEEMED",
-      title: "VICEROY HALL",
-      description: "Steeped in history and regal splendor, Viceroy Hall is the jewel of Royal Ritz. Overlooking the lush gardens and pool, this grand hall features mammoth chandeliers and intricate colonial motifs, providing a majestic backdrop for weddings and high-profile galas for up to 500 guests.",
+      title: "SUGANI HALL",
+      description: "Steeped in history and regal splendor, Sugani Hall is the jewel of Royal Ritz. Overlooking the lush gardens and pool, this grand hall features mammoth chandeliers and intricate colonial motifs, providing a majestic backdrop for weddings and high-profile galas for up to 500 guests.",
       image: viceroyImg,
       linkText: "VIEW PROPOSAL"
     },
@@ -28,7 +28,7 @@ const Banquet = () => {
     },
     {
       subtitle: "AL FRESCO",
-      title: "THE ROYAL GARDENS",
+      title: "SUGANI LAWN",
       description: "Experience the charm of a vintage outdoor celebration in The Royal Gardens. Surrounded by centuries-old palms and manicured lawns, this versatile space transform into a magical venue for moonlit cocktails, sun-drenched brunches, or grand receptions under the stars.",
       image: gardenImg,
       linkText: "EXPLORE VENUE"
