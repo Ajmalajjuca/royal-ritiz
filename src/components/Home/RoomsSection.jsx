@@ -19,8 +19,8 @@ const rooms = [
     link: "/rooms/suite-room"
   },
   {
-    title: "The Villa",
-    description: "Escape to our charming Villa with private garden access and tranquil surroundings.",
+    title: "The Cottage",
+    description: "Escape to our charming Cottage Rooms with private garden access and tranquil surroundings.",
     image: room3,
     link: "/rooms/cottage-room"
   }

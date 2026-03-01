@@ -19,13 +19,13 @@ const Banquet = () => {
       image: viceroyImg,
       linkText: "VIEW PROPOSAL"
     },
-    {
-      subtitle: "SOPHISTICATED",
-      title: "THE SENATE",
-      description: "Designed for the modern executive, The Senate offers an atmosphere of refined professionalism. With its wood-paneled walls and state-of-the-art conferencing technology, it is the ideal venue for strategy sessions, intimate press conferences, and executive board meetings for up to 80 delegates.",
-      image: senateImg,
-      linkText: "ENQUIRE NOW"
-    },
+    // {
+    //   subtitle: "SOPHISTICATED",
+    //   title: "THE SENATE",
+    //   description: "Designed for the modern executive, The Senate offers an atmosphere of refined professionalism. With its wood-paneled walls and state-of-the-art conferencing technology, it is the ideal venue for strategy sessions, intimate press conferences, and executive board meetings for up to 80 delegates.",
+    //   image: senateImg,
+    //   linkText: "ENQUIRE NOW"
+    // },
     {
       subtitle: "AL FRESCO",
       title: "SUGANI LAWN",
@@ -35,7 +35,7 @@ const Banquet = () => {
     },
     {
       subtitle: "EXECUTIVELY",
-      title: "VICEREGAL BOARDROOM",
+      title: "BOARDROOM",
       description: "An exclusive space for the inner circle, the Viceregal Boardroom combines comfort with cutting-edge technology. Tailored for discrete discussions and high-stakes negotiations, this room accommodates up to 25 guests in a setting that reflects timeless power and prestige.",
       image: boardRoomImg,
       linkText: "BOOK NOW"

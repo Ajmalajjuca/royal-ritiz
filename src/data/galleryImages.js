@@ -60,12 +60,6 @@ export const galleryImages = [
         "title": "BQT Royal Ritz 25"
     },
     {
-        "id": 110,
-        "src": "/optimized-new-assets/BQT Royal Ritz-26.webp",
-        "category": "Banquets",
-        "title": "BQT Royal Ritz 26"
-    },
-    {
         "id": 111,
         "src": "/optimized-new-assets/BQT Royal Ritz-27.webp",
         "category": "Banquets",
@@ -114,24 +108,6 @@ export const galleryImages = [
         "title": "DJI 0078"
     },
     {
-        "id": 119,
-        "src": "/optimized-new-assets/DJI_0086.webp",
-        "category": "Exterior",
-        "title": "DJI 0086"
-    },
-    {
-        "id": 120,
-        "src": "/optimized-new-assets/DJI_0087.webp",
-        "category": "Exterior",
-        "title": "DJI 0087"
-    },
-    {
-        "id": 121,
-        "src": "/optimized-new-assets/DJI_0088.webp",
-        "category": "Exterior",
-        "title": "DJI 0088"
-    },
-    {
         "id": 122,
         "src": "/optimized-new-assets/DJI_0089.webp",
         "category": "Exterior",
@@ -144,22 +120,10 @@ export const galleryImages = [
         "title": "DJI 0090"
     },
     {
-        "id": 124,
-        "src": "/optimized-new-assets/DJI_0091.webp",
-        "category": "Exterior",
-        "title": "DJI 0091"
-    },
-    {
         "id": 125,
         "src": "/optimized-new-assets/DJI_0096.webp",
         "category": "Exterior",
         "title": "DJI 0096"
-    },
-    {
-        "id": 126,
-        "src": "/optimized-new-assets/DJI_0097.webp",
-        "category": "Exterior",
-        "title": "DJI 0097"
     },
     {
         "id": 127,
@@ -180,12 +144,6 @@ export const galleryImages = [
         "title": "DJI 0103"
     },
     {
-        "id": 130,
-        "src": "/optimized-new-assets/DJI_0104.webp",
-        "category": "Exterior",
-        "title": "DJI 0104"
-    },
-    {
         "id": 131,
         "src": "/optimized-new-assets/DJI_0162.webp",
         "category": "Exterior",
@@ -202,30 +160,6 @@ export const galleryImages = [
         "src": "/optimized-new-assets/DJI_0164.webp",
         "category": "Exterior",
         "title": "DJI 0164"
-    },
-    {
-        "id": 134,
-        "src": "/optimized-new-assets/DJI_0165.webp",
-        "category": "Exterior",
-        "title": "DJI 0165"
-    },
-    {
-        "id": 135,
-        "src": "/optimized-new-assets/DJI_0167.webp",
-        "category": "Exterior",
-        "title": "DJI 0167"
-    },
-    {
-        "id": 136,
-        "src": "/optimized-new-assets/DJI_0168.webp",
-        "category": "Exterior",
-        "title": "DJI 0168"
-    },
-    {
-        "id": 137,
-        "src": "/optimized-new-assets/DJI_0169.webp",
-        "category": "Exterior",
-        "title": "DJI 0169"
     },
     {
         "id": 138,
@@ -274,12 +208,6 @@ export const galleryImages = [
         "src": "/optimized-new-assets/DSC01631.webp",
         "category": "Exterior",
         "title": "DSC01631"
-    },
-    {
-        "id": 146,
-        "src": "/optimized-new-assets/DSC01632.webp",
-        "category": "Exterior",
-        "title": "DSC01632"
     },
     {
         "id": 147,
@@ -384,12 +312,6 @@ export const galleryImages = [
         "title": "Royal Ritz 102"
     },
     {
-        "id": 164,
-        "src": "/optimized-new-assets/Royal Ritz-103.webp",
-        "category": "Rooms",
-        "title": "Royal Ritz 103"
-    },
-    {
         "id": 165,
         "src": "/optimized-new-assets/Royal Ritz-104.webp",
         "category": "Rooms",
@@ -492,12 +414,6 @@ export const galleryImages = [
         "title": "Royal Ritz 119"
     },
     {
-        "id": 182,
-        "src": "/optimized-new-assets/Royal Ritz-12.webp",
-        "category": "Rooms",
-        "title": "Royal Ritz 12"
-    },
-    {
         "id": 183,
         "src": "/optimized-new-assets/Royal Ritz-120.webp",
         "category": "Rooms",
@@ -552,34 +468,16 @@ export const galleryImages = [
         "title": "Royal Ritz 133 BQT"
     },
     {
-        "id": 192,
-        "src": "/optimized-new-assets/Royal Ritz-134 BQT.webp",
-        "category": "Banquets",
-        "title": "Royal Ritz 134 BQT"
-    },
-    {
         "id": 193,
         "src": "/optimized-new-assets/Royal Ritz-135 BQT.webp",
         "category": "Banquets",
         "title": "Royal Ritz 135 BQT"
     },
     {
-        "id": 194,
-        "src": "/optimized-new-assets/Royal Ritz-136 BQT.webp",
-        "category": "Banquets",
-        "title": "Royal Ritz 136 BQT"
-    },
-    {
         "id": 195,
         "src": "/optimized-new-assets/Royal Ritz-137 BQT.webp",
         "category": "Banquets",
         "title": "Royal Ritz 137 BQT"
-    },
-    {
-        "id": 196,
-        "src": "/optimized-new-assets/Royal Ritz-138 BQT.webp",
-        "category": "Banquets",
-        "title": "Royal Ritz 138 BQT"
     },
     {
         "id": 197,
@@ -598,12 +496,6 @@ export const galleryImages = [
         "src": "/optimized-new-assets/Royal Ritz-140.webp",
         "category": "Rooms",
         "title": "Royal Ritz 140"
-    },
-    {
-        "id": 200,
-        "src": "/optimized-new-assets/Royal Ritz-141.webp",
-        "category": "Rooms",
-        "title": "Royal Ritz 141"
     },
     {
         "id": 201,
@@ -1326,12 +1218,6 @@ export const galleryImages = [
         "title": "Royal Ritz 47"
     },
     {
-        "id": 321,
-        "src": "/optimized-new-assets/Royal Ritz-48.webp",
-        "category": "Rooms",
-        "title": "Royal Ritz 48"
-    },
-    {
         "id": 322,
         "src": "/optimized-new-assets/Royal Ritz-49.webp",
         "category": "Rooms",
@@ -1348,12 +1234,6 @@ export const galleryImages = [
         "src": "/optimized-new-assets/Royal Ritz-50.webp",
         "category": "Rooms",
         "title": "Royal Ritz 50"
-    },
-    {
-        "id": 325,
-        "src": "/optimized-new-assets/Royal Ritz-51.webp",
-        "category": "Rooms",
-        "title": "Royal Ritz 51"
     },
     {
         "id": 326,
@@ -1410,12 +1290,6 @@ export const galleryImages = [
         "title": "Royal Ritz 63"
     },
     {
-        "id": 335,
-        "src": "/optimized-new-assets/Royal Ritz-64.webp",
-        "category": "Rooms",
-        "title": "Royal Ritz 64"
-    },
-    {
         "id": 336,
         "src": "/optimized-new-assets/Royal Ritz-65.webp",
         "category": "Rooms",
@@ -1450,12 +1324,6 @@ export const galleryImages = [
         "src": "/optimized-new-assets/Royal Ritz-7.webp",
         "category": "Rooms",
         "title": "Royal Ritz 7"
-    },
-    {
-        "id": 342,
-        "src": "/optimized-new-assets/Royal Ritz-70.webp",
-        "category": "Rooms",
-        "title": "Royal Ritz 70"
     },
     {
         "id": 343,
