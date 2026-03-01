@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './InstagramSection.css';
-const insta1 = '/optimized-new-assets/Royal_Ritz-233.webp';
-const insta2 = '/optimized-new-assets/DJI_0164.webp';
-const insta3 = '/optimized-new-assets/Royal_Ritz-199.webp';
-const insta4 = '/optimized-new-assets/Royal_Ritz-197.webp';
 
 const InstagramSection = () => {
-  const instaImages = [insta1, insta2, insta3, insta4];
+  useEffect(() => {
+    // Load Elfsight platform script if not already loaded
+    if (!document.querySelector('script[src="https://elfsightcdn.com/platform.js"]')) {
+      const script = document.createElement('script');
+      script.src = 'https://elfsightcdn.com/platform.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
 
   return (
     <section className="instagram-section">
@@ -14,20 +18,20 @@ const InstagramSection = () => {
         <div className="insta-header">
           <h2 className="insta-hashtag">#royalritzofficial</h2>
           <p className="insta-subtext">
-            Visit <a href="https://www.instagram.com/royalritzofficial/" target="_blank" rel="noopener noreferrer">@royalritzofficial</a> on @ to discover unforgettable guest experiences at Royal Ritz Hubli.
+            Visit{' '}
+            <a
+              href="https://www.instagram.com/royalritzofficial/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @royalritzofficial
+            </a>{' '}
+            on Instagram to discover unforgettable guest experiences at Royal Ritz Hubli.
           </p>
         </div>
 
-        <div className="insta-grid">
-          {instaImages.map((img, index) => (
-            <div className="insta-item" key={index}>
-              <img src={img} alt={`Instagram ${index + 1}`} className="insta-img" />
-              <div className="insta-overlay">
-                <span className="insta-icon"></span>
-              </div>
-            </div>
-          ))}
-        </div>
+        {/* Elfsight Instagram Feed */}
+        <div class="elfsight-app-93a39593-40d7-4033-b114-8d31ba17c0ce" data-elfsight-app-lazy></div>
       </div>
     </section>
   );
