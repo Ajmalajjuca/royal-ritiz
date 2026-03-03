@@ -8,7 +8,7 @@ const banquetHero = '/optimized-new-assets/BQT_Royal_Ritz-121.webp';
 const viceroyImg = '/optimized-new-assets/Royal Ritz-28.webp';
 const senateImg = '/optimized-new-assets/Royal_Ritz-133_BQT.webp';
 const gardenImg = '/optimized-new-assets/Royal_Ritz-105.webp';
-const boardRoomImg = '/optimized-new-assets/Royal_Ritz-125_BQT.webp';
+const boardRoomImg = 'https://imgs.search.brave.com/RlyUJsRtLw5ZpSng551cCwm59HtumPVaYTRfpndRmWg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbXlocS9pbWFn/ZS91cGxvYWQvcV9h/dXRvL3dfMTkyMC9m/X2F1dG8vdF9jcm9w/LTEvd2ViL3Nzci9w/YWdlcy9tZWV0aW5n/LXJvb21zL2hlcm8t/aW1hZ2U';
 
 const Banquet = () => {
   const venues = [

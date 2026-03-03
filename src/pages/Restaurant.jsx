@@ -6,7 +6,7 @@ import "./Restaurant.css";
 // Images
 const pickwicksImg = "/optimized-new-assets/Royal Ritz-87.webp";
 const sevillaImg = "/optimized-new-assets/Royal_Ritz-79.webp";
-const jadeImg = "/optimized-new-assets/Royal_Ritz-155_CAFE.webp";
+const jadeImg = "/optimized-new-assets/bunkerz.jpeg";
 const dhabaImg = "/optimized-new-assets/Royal Ritz-78.webp";
 
 const Restaurant = () => {
@@ -61,7 +61,7 @@ const Restaurant = () => {
     <div className="restaurant-page-wrapper">
       <HeroSection
         title="RESTAURANTS & BARS"
-        image={pickwicksImg}
+        image={sevillaImg}
       />
 
       <section className="restaurant-page-content">

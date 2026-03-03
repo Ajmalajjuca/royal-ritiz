@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import './DiningSlider.css';
 const tangerine = "/optimized-new-assets/Royal Ritz-87.webp";
 const poolside = "/optimized-new-assets/Royal Ritz-79.webp";
-const bunkerz = "/optimized-new-assets/Royal_Ritz-155_CAFE.webp";
+const bunkerz = "/optimized-new-assets/bunkerz.jpeg";
 const poolbar = "/optimized-new-assets/Royal Ritz-78.webp";
 
 const diningData = [
