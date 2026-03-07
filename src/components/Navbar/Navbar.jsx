@@ -11,7 +11,7 @@ const Navbar = () => {
   const navLinks = [
     { path: "/rooms", label: "ROOMS", icon: "bed" },
     { path: "/restaurant", label: "DINING", icon: "dining" },
-    { path: "/spa", label: "WELLNESS", icon: "lotus" },
+    // { path: "/spa", label: "WELLNESS", icon: "lotus" },
     { path: "/banquet", label: "EXPERIENCES", icon: "compass" },
     { path: "/gallery", label: "GALLERY", icon: "gallery" },
     { path: "/about", label: "ABOUT", icon: "info" },
