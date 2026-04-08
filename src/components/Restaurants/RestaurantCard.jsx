@@ -18,7 +18,7 @@ const RestaurantCard = ({ title, subtitle, description, image, details, index })
           <span className="restaurant-card-label">{subtitle || "DINING EXPERIENCE"}</span>
           <h2 className="restaurant-card-title">{title}</h2>
 
-          <p className="restaurant-card-description">{description}</p>
+          <div className="restaurant-card-description">{description}</div>
 
           {details && details.length > 0 && (
             <div className="restaurant-card-details">
