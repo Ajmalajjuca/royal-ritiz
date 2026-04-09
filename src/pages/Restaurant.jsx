@@ -17,13 +17,13 @@ const Restaurant = () => {
       description: (
         <>
           <strong>Tangerine – Best Restaurant in Hubli for Veg & Non-Veg Delights</strong>
-          
+
           <p>Welcome to Tangerine, a vibrant all-day dining destination where global flavors meet warm hospitality. Recognized as one of the best restaurants in Hubli, Tangerine is the perfect place for food lovers seeking a memorable dining experience. Whether you're searching for a restaurant near me, planning a family outing, or a business lunch, we offer the ideal ambiance and flavors for every occasion.</p>
-          
+
           <strong>A Hubli Restaurant Serving Global Cuisines</strong>
-          
+
           <p>At Tangerine, we bring together an eclectic mix of cuisines to satisfy every palate. From rich Indian spices to international favorites, our menu is thoughtfully curated to make us one of the top restaurants in Hubli.</p>
-          
+
           <strong>Our Specialties Include:</strong>
           <ul>
             <li>Authentic Indian Cuisine</li>
@@ -33,11 +33,11 @@ const Restaurant = () => {
             <li>Delicious Tandoor Specialties</li>
             <li>Wide range of Veg & Non-Veg Options</li>
           </ul>
-          
+
           <p>Every dish is prepared with fresh ingredients, expert techniques, and a passion for delivering taste that makes us a famous restaurant in Hubli.</p>
-          
+
           <strong>Perfect Ambiance for Every Occasion</strong>
-          
+
           <p>Tangerine offers a bright, welcoming, and modern dining atmosphere that suits:</p>
           <ul>
             <li>Family dinners</li>
@@ -45,22 +45,22 @@ const Restaurant = () => {
             <li>Business lunches</li>
             <li>Celebrations & special occasions</li>
           </ul>
-          
+
           <p>Our warm hospitality and elegant interiors make us a preferred Hubli restaurant for locals and visitors alike.</p>
-          
+
           <strong>Timings</strong>
           <p>🕒 Open Daily: 11:00 AM – 11:30 PM</p>
-          
+
           <strong>Reserve a Table</strong>
           <p>Make your dining experience hassle-free by reserving your table in advance. Enjoy seamless service and avoid waiting time at one of the top restaurants in Hubli.</p>
-          
+
           <strong>Call Us</strong>
           <p>
             <a href="tel:+919606017459" style={{ color: "inherit", textDecoration: "none" }}>
               📞 Get in touch with us for reservations, inquiries, or special requests. Our team is always ready to assist you.
             </a>
           </p>
-          
+
           <strong>Why Choose Tangerine?</strong>
           <ul>
             <li>One of the best restaurants in Hubli</li>
