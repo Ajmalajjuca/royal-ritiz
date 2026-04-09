@@ -12,6 +12,8 @@ import About from "./pages/About";
 import Gallery from "./pages/Gallery/Gallery";
 
 import RoomDetail from "./pages/RoomDetail";
+import FloatingContact from "./components/Common/FloatingContact";
+
 
 function App() {
   return (
@@ -36,8 +38,10 @@ function App() {
         </main>
 
         <Footer />
+        <FloatingContact />
       </div>
     </Router>
+
   );
 }
 
