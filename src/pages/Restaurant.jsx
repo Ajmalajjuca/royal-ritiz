@@ -55,7 +55,11 @@ const Restaurant = () => {
           <p>Make your dining experience hassle-free by reserving your table in advance. Enjoy seamless service and avoid waiting time at one of the top restaurants in Hubli.</p>
           
           <strong>Call Us</strong>
-          <p>📞 Get in touch with us for reservations, inquiries, or special requests. Our team is always ready to assist you.</p>
+          <p>
+            <a href="tel:+919606017459" style={{ color: "inherit", textDecoration: "none" }}>
+              📞 Get in touch with us for reservations, inquiries, or special requests. Our team is always ready to assist you.
+            </a>
+          </p>
           
           <strong>Why Choose Tangerine?</strong>
           <ul>
