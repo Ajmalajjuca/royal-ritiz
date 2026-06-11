@@ -13,11 +13,13 @@ import Gallery from "./pages/Gallery/Gallery";
 
 import RoomDetail from "./pages/RoomDetail";
 import FloatingContact from "./components/Common/FloatingContact";
+import ScrollToTop from "./components/Common/ScrollToTop";
 
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="app-container">
         <Navbar />
 
