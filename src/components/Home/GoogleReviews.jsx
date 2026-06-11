@@ -43,7 +43,6 @@ const GoogleReviews = () => {
           <div className="header-text-content">
             <h2 className="reviews-main-title">Google Reviews</h2>
             <h4 className="reviews-main-subtitle">Voice of Our Valued Guests</h4>
-            <button className="all-reviews-btn-premium">ALL REVIEWS</button>
           </div>
         </div>
 

@@ -1,7 +1,8 @@
 import React from 'react';
 import './BenefitsSection.css';
-
+import { useNavigate } from "react-router-dom";
 const BenefitsSection = () => {
+    const navigate = useNavigate();
     return (
         <section className="benefits-section">
             <div className="container">
@@ -10,7 +11,6 @@ const BenefitsSection = () => {
                     <p className="benefits-text">
                         Experience unparalleled bliss with exclusive memberships curated for your regal presence at our distinguished hotel in Hubli.
                     </p>
-                    <button className="benefits-explore-btn">EXPLORE</button>
                 </div>
             </div>
         </section>

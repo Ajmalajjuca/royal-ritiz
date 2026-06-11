@@ -1,9 +1,11 @@
 import React from 'react';
 import './EventsSection.css';
+import { useNavigate } from "react-router-dom";
 const eventImg1 = '/optimized-new-assets/BQT_Royal_Ritz-121.webp';
 const eventImg2 = 'https://imgs.search.brave.com/RlyUJsRtLw5ZpSng551cCwm59HtumPVaYTRfpndRmWg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbXlocS9pbWFn/ZS91cGxvYWQvcV9h/dXRvL3dfMTkyMC9m/X2F1dG8vdF9jcm9w/LTEvd2ViL3Nzci9w/YWdlcy9tZWV0aW5n/LXJvb21zL2hlcm8t/aW1hZ2U';
 
 const EventsSection = () => {
+    const navigate = useNavigate();
     return (
         <section className="events-section">
             <div className="container">
@@ -19,7 +21,7 @@ const EventsSection = () => {
                     <div className="header-text-content">
                         <h2 className="events-main-title">Experience Elegance: Unforgettable Soirées at Royal Ritz</h2>
                         <h4 className="events-main-subtitle">Epic Event Spaces</h4>
-                        <button className="events-explore-btn">EXPLORE</button>
+                        <button onClick={() => navigate("/banquet")} className="events-explore-btn">EXPLORE</button>
                     </div>
                 </div>
 

@@ -131,7 +131,7 @@ const RoomDetail = () => {
                             </div>
 
                             <div className="sidebar-cta">
-                                <button className="details-btn book-btn">BOOK NOW</button>
+                                <button onClick={() => window.open("https://www.swiftbook.io/inst/#home?propertyId=621MEmpd0yjLcROXNiQrbGBSseXPjikyQKjjMyMDM=&JDRN=Y&m_currency=INR", "_blank")} className="details-btn book-btn">BOOK NOW</button>
                                 <p className="cta-note">Best price guaranteed on our website</p>
                             </div>
                         </div>

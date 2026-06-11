@@ -1,8 +1,10 @@
 import React from "react";
 import "./IntroductionSection.css";
+import { useNavigate } from "react-router-dom";
 const heritageImg = '/optimized-new-assets/Royal_Ritz-34.webp';
 
 const IntroductionSection = () => {
+  const navigate = useNavigate();
   return (
     <section className="heritage-section">
       {/* Background Layer */}
@@ -22,8 +24,8 @@ const IntroductionSection = () => {
         {/* Text Content */}
         <div className="heritage-content">
           <h2 className="heritage-title">Heritage Stays With Contemporary Capabilities</h2>
-          <h4 className="heritage-subtitle">Majestic Rooms</h4>
-          <button className="heritage-btn">EXPLORE</button>
+          {/* <h4 className="heritage-subtitle">Majestic Rooms</h4> */}
+          <button className="heritage-btn" onClick={() => navigate("/rooms")}>EXPLORE</button>
         </div>
       </div>
     </section>

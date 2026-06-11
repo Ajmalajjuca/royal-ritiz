@@ -138,12 +138,6 @@ export const galleryImages = [
         "title": "DJI 0170"
     },
     {
-        "id": 139,
-        "src": "/optimized-new-assets/DSC01329.webp",
-        "category": "Rooms",
-        "title": "DSC01329"
-    },
-    {
         "id": 140,
         "src": "/optimized-new-assets/DSC01348.webp",
         "category": "Rooms",
@@ -186,18 +180,6 @@ export const galleryImages = [
         "title": "DSC01683"
     },
     {
-        "id": 149,
-        "src": "/optimized-new-assets/DSC01707(2).webp",
-        "category": "Exterior",
-        "title": "DSC01707(2)"
-    },
-    {
-        "id": 150,
-        "src": "/optimized-new-assets/DSC01770.webp",
-        "category": "Exterior",
-        "title": "DSC01770"
-    },
-    {
         "id": 151,
         "src": "/optimized-new-assets/DSC01783.webp",
         "category": "Exterior",
@@ -238,12 +220,6 @@ export const galleryImages = [
         "src": "/optimized-new-assets/Pre1.webp",
         "category": "Rooms",
         "title": "Pre1"
-    },
-    {
-        "id": 159,
-        "src": "/optimized-new-assets/Royal Ritz-1.webp",
-        "category": "Rooms",
-        "title": "Royal Ritz 1"
     },
     {
         "id": 160,

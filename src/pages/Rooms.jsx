@@ -20,12 +20,12 @@ const Rooms = () => {
       category: "Superior",
       title: "SUPERIOR ROOMS",
       description: "Step into our Superior rooms, where colonial-era charm meets modern luxury. Featuring sensor-activated lighting, a sumptuous 400-thread count mattress, rosewood furnishings, and expansive windows that invite the sun's gentle embrace.",
-      image: "/optimized-new-assets/SUP_1.webp",
+      image: "/optimized-new-assets/Sup_3.webp",
       link: "/rooms/superior"
     },
     {
       category: "Suite",
-      title: "SUITES",
+      title: "SUITES ROOMS",
       description: "Our pinnacle offering for the crème de la crème. An opulent living area precedes a luxurious bedroom adorned with handpicked artwork. Every detail reflects timeless elegance and thoughtful design, ensuring your stay is paramount.",
       image: "/optimized-new-assets/Suite_1.webp",
       link: "/rooms/suite"

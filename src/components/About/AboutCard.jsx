@@ -31,7 +31,7 @@ const AboutCard = ({ title, description, image, imageAlt }) => {
             {description}
           </p>
 
-          <button className="btn-secondary">READ MORE</button>
+          {/* <button className="btn-secondary">READ MORE</button> */}
         </div>
       </div>
     </section>

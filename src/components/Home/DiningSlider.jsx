@@ -4,7 +4,7 @@ const tangerine = "/optimized-new-assets/Royal Ritz-87.webp";
 const poolside = "/optimized-new-assets/Royal Ritz-79.webp";
 const bunkerz = "/optimized-new-assets/bunkerz.jpeg";
 const poolbar = "/optimized-new-assets/Royal Ritz-78.webp";
-
+import { useNavigate } from "react-router-dom";
 const diningData = [
     {
         image: tangerine,
@@ -37,6 +37,7 @@ const diningData = [
 ];
 
 const DiningSlider = () => {
+    const navigate = useNavigate();
     const sliderRef = useRef(null);
 
     const scroll = (direction) => {
@@ -65,7 +66,7 @@ const DiningSlider = () => {
                     <div className="header-text-content">
                         <h2 className="dining-main-title">Dine With Decadence</h2>
                         <h4 className="dining-main-subtitle">Offering 9 Exceptional Culinary Experiences</h4>
-                        <button className="dining-explore-btn">EXPLORE</button>
+                        <button onClick={() => navigate("/restaurant")} className="dining-explore-btn">EXPLORE</button>
                     </div>
                 </div>
             </div>

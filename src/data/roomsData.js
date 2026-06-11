@@ -226,9 +226,9 @@ export const roomsData = {
     category: "Premium",
     images: [
       "/optimized-new-assets/Royal Ritz-231.webp",
+      "/optimized-new-assets/Royal Ritz-229.webp",
       "/optimized-new-assets/Royal Ritz-219.webp",
       "/optimized-new-assets/Royal Ritz-220.webp",
-      "/optimized-new-assets/Royal Ritz-229.webp"
     ],
     description: "Experience refined comfort in our Premium rooms, thoughtfully designed with warm tones, plush bedding, and modern amenities. Ideal for the discerning traveller seeking a perfect balance of style and value in the heart of the city.",
     size: "35 m² / 377 ft²",
@@ -254,7 +254,7 @@ export const roomsData = {
   "superior": {
     name: "Superior Rooms",
     category: "Superior",
-    images: [sup1, sup2, sup3, sup4, sup5, sup6, sup7, sup8],
+    images: [sup3, sup7, sup4, sup5, sup6,  sup8, sup1, sup2],
     description: "Step into our Superior rooms, where colonial-era charm meets modern luxury. Featuring sensor-activated lighting, a sumptuous 400-thread count mattress, rosewood furnishings, and expansive windows that invite the sun's gentle embrace.",
     size: "40 m² / 430 ft²",
     guests: "Up to 2 Guests",
@@ -278,9 +278,9 @@ export const roomsData = {
   },
 
   "suite": {
-    name: "Suites",
+    name: "Suites Rooms",
     category: "Suite",
-    images: [suite1, suite7, suite8, suite3, suite4, suite6, suite9, suite10, suite11, suite12],
+    images: [suite1, suite8, suite9, suite10, suite11, suite12, suite7,  suite3, suite4, suite6,],
     description: "Our pinnacle offering for the crème de la crème. An opulent living area precedes a luxurious bedroom adorned with handpicked artwork. Every detail reflects timeless elegance and thoughtful design, ensuring your stay is paramount.",
     size: "65–85 m² / 700–915 ft²",
     guests: "Up to 3 Guests",
@@ -306,8 +306,8 @@ export const roomsData = {
     name: "Cottages",
     category: "Cottage",
     images: [
-      "/optimized-new-assets/Royal Ritz-164 Cottage.webp",
       "/optimized-new-assets/Royal Ritz-64.webp",
+      "/optimized-new-assets/Royal Ritz-164 Cottage.webp",
       "/optimized-new-assets/Royal Ritz-169 Cottage.webp",
       "/optimized-new-assets/Royal Ritz-174 Cottage.webp",
       "/optimized-new-assets/Royal Ritz-177 Cottage.webp",

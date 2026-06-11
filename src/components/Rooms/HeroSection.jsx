@@ -7,7 +7,7 @@ const HeroSection = ({ title, subtitle, image }) => {
     <section className="inner-hero-section">
       <div
         className="inner-hero-background"
-        style={image ? { backgroundImage: `url(${image})` } : {}}
+        style={image ? { backgroundImage: `url("${image}")` } : {}}
       ></div>
       <div className="inner-hero-overlay"></div>
 

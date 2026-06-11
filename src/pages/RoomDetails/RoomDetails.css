@@ -320,6 +320,14 @@
   width: 100%;
   margin: 0;
   padding: 20px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.sidebar-cta .book-btn:hover {
+  background-color: transparent;
+  color: #000;
 }
 
 .cta-note {

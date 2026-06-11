@@ -60,7 +60,7 @@ const Navbar = () => {
         {/* Right Section: Actions & Icons */}
         <div className="navbar-actions">
 
-          <button className="book-btn">BOOK NOW</button>
+          <button className="book-btn" onClick={() => window.open("https://www.swiftbook.io/inst/#home?propertyId=621MEmpd0yjLcROXNiQrbGBSseXPjikyQKjjMyMDM=&JDRN=Y&m_currency=INR", "_blank")}>BOOK NOW</button>
 
           <div className="navbar-menu-toggle" onClick={toggleMobileMenu}>
             <div className={`hamburger-icon ${mobileMenuOpen ? "open" : ""}`}>

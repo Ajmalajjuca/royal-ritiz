@@ -10,19 +10,19 @@ const rooms = [
     title: "Premium King",
     description: "Experience ultimate comfort in our Premium King Bed Rooms featuring elegant interiors.",
     image: room1,
-    link: "/rooms/premium-king-room"
+    link: "/rooms/premium"
   },
   {
     title: "The Suite",
     description: "Indulge in our spacious Suite Rooms with separate living areas and panoramic views.",
     image: room2,
-    link: "/rooms/suite-room"
+    link: "/rooms/suite"
   },
   {
     title: "The Cottage",
     description: "Escape to our charming Cottage Rooms with private garden access and tranquil surroundings.",
     image: room3,
-    link: "/rooms/cottage-room"
+    link: "/rooms/cottage"
   }
 ];
 

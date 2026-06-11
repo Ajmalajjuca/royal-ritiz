@@ -3,7 +3,7 @@ import "./Gallery.css";
 
 import { galleryImages } from "../../data/galleryImages";
 
-const categories = ["ALL PHOTOS", "EXTERIOR, INTERIOR & LOBBY", "ROOMS", "RESTAURANTS & BARS", "FOOD & DRINKS", "WELLNESS", "EVENT SPACES"];
+const categories = ["ALL PHOTOS", "EXTERIOR, INTERIOR & LOBBY", "ROOMS", "RESTAURANTS & BARS", "EVENT SPACES"];
 
 const IMAGES_PER_PAGE = 12;
 
