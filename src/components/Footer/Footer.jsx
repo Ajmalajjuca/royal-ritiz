@@ -39,19 +39,15 @@ const Footer = () => {
           <h4 className="footer-heading">Quick Links</h4>
           <div className="footer-links-grid">
             <ul className="footer-links">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">Royal Ritz Hubali</Link></li>
-              <li><Link to="/rooms">Rooms</Link></li>
-              <li><Link to="/restaurant">Dining</Link></li>
-              <li><Link to="/spa">Wellness</Link></li>
-              <li><Link to="#">Experiences</Link></li>
+              <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
+              <li><Link to="/rooms" onClick={scrollToTop}>Rooms</Link></li>
+              <li><Link to="/restaurant" onClick={scrollToTop}>Dining</Link></li>
+              <li><Link to="/banquet" onClick={scrollToTop}>Experiences</Link></li>
             </ul>
             <ul className="footer-links">
-              <li><Link to="/banquet">Events</Link></li>
-              <li><Link to="#">Gallery</Link></li>
-              <li><Link to="#">Location</Link></li>
-              <li><Link to="#">Fact Sheet</Link></li>
-              <li><Link to="#">Find Your Reservations</Link></li>
+              <li><Link to="/banquet" onClick={scrollToTop}>Events</Link></li>
+              <li><Link to="/gallery" onClick={scrollToTop}>Gallery</Link></li>
+              <li><Link to="https://maps.app.goo.gl/ik8by1DByyaWWwGA9" target="_blank" onClick={scrollToTop}>Location</Link></li>
             </ul>
           </div>
         </div>
@@ -79,17 +75,16 @@ const Footer = () => {
         <div className="footer-col social-col">
           <h4 className="footer-heading">Our Online Presence</h4>
           <div className="social-presence-icons">
-            <a href="https://www.instagram.com/royalritzofficial" className="presence-social-icon"><FaWhatsapp /></a>
-            <a href="https://www.instagram.com/royalritzofficial" className="presence-social-icon"><FaFacebookF /></a>
-            <a href="https://www.instagram.com/royalritzofficial" className="presence-social-icon"><FaGoogle /></a>
-            <a href="https://www.instagram.com/royalritzofficial" className="presence-social-icon"><FaLinkedinIn /></a>
+            <a href="https://wa.me/919606017457" target="_blank" rel="noreferrer" className="presence-social-icon"><FaWhatsapp /></a>
+            <a href="https://www.facebook.com/royalritzofficial" target="_blank" rel="noreferrer" className="presence-social-icon"><FaFacebookF /></a>
+            <a href="https://www.google.com/search?q=royalritz&hs=JZ3p&sxsrf=ANbL-n5116jMbwdWSsbCidmVVhzuh0nVJQ%3A1781171803838&zx=1781197219936" target="_blank" rel="noreferrer" className="presence-social-icon"><FaGoogle /></a>
             <a href="https://www.instagram.com/royalritzofficial" target="_blank" rel="noreferrer" className="presence-social-icon"><FaInstagram /></a>
           </div>
         </div>
 
       </div>
 
-      <div className="footer-bottom">
+      {/* <div className="footer-bottom">
         <div className="container bottom-container">
           <div className="bottom-links">
             <Link to="#">Sitemap</Link>
@@ -97,7 +92,7 @@ const Footer = () => {
             <p className="designer-credit">Designed by Stream Entertainment</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* {showScrollTop && (
         <button className="scroll-to-top" onClick={scrollToTop} aria-label="Scroll to top">
